@@ -13,6 +13,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@tailwindcss/vite": "^4.1.11",
+    "antd": "^6.1.0",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "i18next": "^25.3.2",

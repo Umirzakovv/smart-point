@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 
-@layer {
+:root {
+  --color-primary: #9fe870;
+  --color-danger: #da1e28;
 }
 
 html,
@@ -10,4 +12,37 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+}
+
+/* Ant design base component style */
+
+.ant-btn {
+  padding-block: 20px;
+  box-shadow: none !important;
+}
+
+.ant-btn-color-primary {
+  border: 2px solid #fff !important;
+}
+
+.ant-btn-color-primary:hover {
+  border: 2px solid #abf08d !important;
+  background-color: var(--color-primary) !important;
+}
+
+.ant-btn-variant-text {
+  border: 2px solid transparent !important;
+}
+
+.ant-btn-variant-text:hover {
+  background-color: #fff !important;
+  border: 2px solid #dde1e6 !important;
+}
+
+.ant-btn-color-dangerous {
+  border: 2px solid #fff !important;
+}
+
+.ant-btn-color-dangerous:hover {
+  border: 2px solid #ffb3b8 !important;
 }

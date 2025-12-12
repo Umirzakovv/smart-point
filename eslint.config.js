@@ -44,6 +44,22 @@ export default [
       // TypeScript
       '@typescript-eslint/no-explicit-any': 'warn',
 
+      // ✅ UNUSED VARS (THIS IS THE KEY)
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+
+      // ✅ UNUSED IMPORTS (AUTO-REMOVABLE)
+      'unused-imports/no-unused-imports': 'warn',
+      'unused-imports/no-unused-vars': 'off',
+
       // Imports
       'import/newline-after-import': 'error',
       'import/no-restricted-paths': [
@@ -68,18 +84,6 @@ export default [
           ],
         },
       ],
-
-      // Unused
-      'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': 'off',
-      'unused-imports/no-unused-vars': [
-        'warn',
-        { vars: 'all', args: 'after-used', argsIgnorePattern: '^_' },
-      ],
-      'unused-imports/no-unused-imports': 'error',
-
-      // Code style
-      'newline-before-return': 'error',
     },
   },
 ];
