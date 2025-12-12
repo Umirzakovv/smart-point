@@ -7,7 +7,7 @@ export const UIPage = () => {
         <Button type="primary">Primary</Button>
         <Button type="text">Text</Button>
         <Button color="default" variant="filled">
-          Filled
+          Filled button
         </Button>
         {/* Danger */}
         <Button danger type="primary">
