@@ -16,6 +16,7 @@ body {
 
 /* Ant design base component style */
 
+/* BUTTON */
 .ant-btn {
   padding-block: 20px;
   box-shadow: none !important;
@@ -45,4 +46,10 @@ body {
 
 .ant-btn-color-dangerous:hover {
   border: 2px solid #ffb3b8 !important;
+}
+
+/* TAG */
+.ant-tag {
+  border-radius: 9999px !important;
+  padding: 0 8px !important;
 }
