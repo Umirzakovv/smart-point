@@ -1,9 +1,9 @@
-import { Button, Flex } from 'antd';
+import { Button, Flex, Tag } from 'antd';
 
 export const UIPage = () => {
   return (
     <div>
-      <Flex>
+      <Flex gap={8}>
         <Button type="primary">Primary</Button>
         <Button type="text">Text</Button>
         <Button color="default" variant="filled">
@@ -16,6 +16,23 @@ export const UIPage = () => {
         <Button danger type="text">
           Text danger
         </Button>
+      </Flex>
+      <Flex gap={8}>
+        <Tag color="green" variant="outlined">
+          Green
+        </Tag>
+        <Tag color="red" variant="outlined">
+          Red
+        </Tag>
+        <Tag color="yellow" variant="outlined">
+          Yellow
+        </Tag>
+        <Tag color="blue" variant="outlined">
+          Blue
+        </Tag>
+        <Tag color="default" variant="outlined">
+          Default
+        </Tag>
       </Flex>
     </div>
   );
