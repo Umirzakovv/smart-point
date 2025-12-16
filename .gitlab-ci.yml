@@ -1,0 +1,29 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: "unix:///var/run/docker.sock"
+
+build-job:
+  stage: build
+  image: docker:25
+  tags:
+    - wfm_dev
+  script:
+    - docker compose -f docker-compose.yml build
+  only:
+    - dev
+
+deploy-job:
+  stage: deploy
+  image: docker:25
+  tags:
+    - wfm_dev
+  script:
+    - docker compose -f docker-compose.yml down
+    - docker compose -f docker-compose.yml up -d
+    - docker image prune -f
+  only:
+    - dev
