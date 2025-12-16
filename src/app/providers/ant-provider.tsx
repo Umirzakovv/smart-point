@@ -11,6 +11,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
           fontFamily: 'Inter, sans-serif',
         },
         components: {
+          Menu: {
+            itemActiveBg: '#fff',
+            itemSelectedBg: '#fff',
+            itemSelectedColor: '#000',
+          },
           Button: {
             borderRadius: 9999,
             colorBorderDisabled: 'transparent',
