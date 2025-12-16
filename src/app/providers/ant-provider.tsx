@@ -18,6 +18,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
             paddingInline: 24,
             fontSize: 16,
           },
+          Segmented: {
+            itemColor: '#70746D',
+          },
         },
       }}>
       {children}
