@@ -21,6 +21,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
           Segmented: {
             itemColor: '#70746D',
           },
+          Table: {
+            headerColor: '#70746D',
+            headerBg: '#f5f5f5',
+            headerBorderRadius: 8,
+          },
+          Pagination: {
+            borderRadius: 9999,
+          },
         },
       }}>
       {children}
