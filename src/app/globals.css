@@ -75,3 +75,21 @@ body {
   border-radius: 9999px 9999px 0 0 !important;
   height: 3px !important;
 }
+
+/* TABLE */
+.ant-table-thead > tr > th:first-child {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.ant-table-thead > tr > th:last-child {
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  text-transform: uppercase !important;
+}
+
+.ant-table-cell {
+  padding: 10px !important;
+  border-bottom: none !important;
+}
