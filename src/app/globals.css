@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 
 :root {
   --color-primary: #9fe870;
@@ -7,6 +8,7 @@
 
 html,
 body {
+  /* font-family: 'Inter', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,6 +22,7 @@ body {
 .ant-btn {
   padding-block: 20px;
   box-shadow: none !important;
+  /* font-weight: 400 !important; */
 }
 
 .ant-btn-color-primary {
@@ -52,4 +55,23 @@ body {
 .ant-tag {
   border-radius: 9999px !important;
   padding: 0 8px !important;
+}
+
+/* SEGMENTED */
+.ant-segmented-group {
+  border-radius: 9999px !important;
+}
+
+.ant-segmented-item {
+  border-radius: 9999px !important;
+}
+
+.ant-segmented-thumb {
+  border-radius: 9999px !important;
+}
+
+/* TABS */
+.ant-tabs-ink-bar {
+  border-radius: 9999px 9999px 0 0 !important;
+  height: 3px !important;
 }
