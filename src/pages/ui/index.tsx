@@ -1,10 +1,14 @@
 import { Button, Divider, Flex, Tag } from 'antd';
 import TabsUI from './tabs';
 import { TableUI } from './table';
+import { FormUI } from './form';
 
 export const UIPage = () => {
   return (
     <div className="px-5">
+      <Flex gap={8}>
+        <FormUI />
+      </Flex>
       <Divider />
       <Flex gap={8}>
         <Button type="primary">Primary</Button>

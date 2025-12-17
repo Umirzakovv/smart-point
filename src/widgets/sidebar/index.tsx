@@ -29,7 +29,7 @@ export const Sidebar = ({ collapsed }: { collapsed: boolean }) => {
       collapsed={collapsed}
       theme="light"
       width={280}
-      className="h-screen borderr">
+      className="h-screen">
       <Flex className="h-full flex-col">
         <Logo collapsed={collapsed} />
 

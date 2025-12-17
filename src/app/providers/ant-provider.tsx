@@ -16,6 +16,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
             itemSelectedBg: '#fff',
             itemSelectedColor: '#000',
           },
+          // Form
+          Input: {
+            borderRadius: 8,
+            fontSize: 16,
+          },
+          Select: {
+            borderRadius: 8,
+            fontSize: 16,
+          },
           Button: {
             borderRadius: 9999,
             colorBorderDisabled: 'transparent',
