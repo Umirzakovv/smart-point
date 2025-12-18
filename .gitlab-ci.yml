@@ -1,0 +1,65 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: "unix:///var/run/docker.sock"
+
+# ---------- TEMPLATES ----------
+
+.build_dev_template:
+  stage: build
+  image: docker:25
+  script:
+    - docker compose -f docker-compose.dev.yml build
+
+.deploy_dev_template:
+  stage: deploy
+  image: docker:25
+  script:
+    - docker compose -f docker-compose.dev.yml down
+    - docker compose -f docker-compose.dev.yml up -d
+    - docker image prune -f
+
+.build_prod_template:
+  stage: build
+  image: docker:25
+  script:
+    - docker compose -f docker-compose.prod.yml build
+
+.deploy_prod_template:
+  stage: deploy
+  image: docker:25
+  script:
+    - docker compose -f docker-compose.prod.yml down
+    - docker compose -f docker-compose.prod.yml up -d
+    - docker image prune -f
+
+# ---------- DEV ----------
+
+build-dev:
+  extends: .build_dev_template
+  tags: [wfm_dev]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "dev"'
+
+deploy-dev:
+  extends: .deploy_dev_template
+  tags: [wfm_dev]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "dev"'
+
+# ---------- PROD ----------
+
+build-prod:
+  extends: .build_prod_template
+  tags: [wfm_prod]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+deploy-prod:
+  extends: .deploy_prod_template
+  tags: [wfm_prod]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
