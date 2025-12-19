@@ -19,3 +19,10 @@ body {
 .borderr {
   border: 1px solid red !important;
 }
+
+.grid-col-transition {
+  transition:
+    flex-basis 0.3s ease,
+    max-width 0.3s ease,
+    width 0.3s ease;
+}
