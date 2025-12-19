@@ -1,6 +1,8 @@
 import MainLayout from 'pages/layout';
+import { SharedAuthPage } from 'pages/shared/auth';
 import { createBrowserRouter } from 'react-router';
 import { routesList, type IMenu } from 'shared/consts/routes-list';
+import ROUTES_PATHS from 'shared/consts/routes-paths';
 
 export const routes = createBrowserRouter([
   {
@@ -9,5 +11,9 @@ export const routes = createBrowserRouter([
       path: route.key,
       element: route.element,
     })),
+  },
+  {
+    path: ROUTES_PATHS.AUTH,
+    element: <SharedAuthPage />,
   },
 ]);

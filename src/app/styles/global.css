@@ -26,3 +26,14 @@ body {
     max-width 0.3s ease,
     width 0.3s ease;
 }
+
+.bg-gradient {
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #fff 0deg,
+    #deffe4 135deg,
+    #fff 179.78123903274536deg,
+    #ceffd8 287.30769395828247deg,
+    #fff 360deg
+  );
+}
