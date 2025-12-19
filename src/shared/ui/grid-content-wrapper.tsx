@@ -10,7 +10,7 @@ interface Props {
 
 const ALL_SPANS = 24;
 
-export const GridContentWrapper = ({ main, drawers, setDrawers }: Props) => {
+export const GridContentWrapper = ({ main, drawers }: Props) => {
   const totalSpansOfContent = drawers.reduce((s, i) => s + i.span, 0);
 
   useEffect(() => {
