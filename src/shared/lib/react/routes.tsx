@@ -1,19 +1,13 @@
 import MainLayout from 'pages/layout';
-import { UIPage } from 'pages/ui';
 import { createBrowserRouter } from 'react-router';
+import { routesList, type IMenu } from 'shared/consts/routes-list';
 
 export const routes = createBrowserRouter([
   {
     element: <MainLayout />,
-    children: [
-      {
-        path: '/',
-        element: <div>Main page</div>,
-      },
-      {
-        path: '/ui',
-        element: <UIPage />,
-      },
-    ],
+    children: routesList.map((route: IMenu) => ({
+      path: route.key,
+      element: route.element,
+    })),
   },
 ]);

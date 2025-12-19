@@ -1,26 +1,23 @@
-import { Flex, Menu } from 'antd';
+import { Flex, Menu, type MenuProps } from 'antd';
 import Sider from 'antd/es/layout/Sider';
-import { SolutionOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import { useLocation, useNavigate } from 'react-router';
-import { Logo } from './logo';
+import { TopContent } from './top-content';
 import { BottomContent } from './bottom-content';
+import { useState } from 'react';
+import { routesList } from 'shared/consts/routes-list';
 
-const mainLinks = [
-  {
-    key: '/',
-    icon: <SolutionOutlined />,
-    label: 'Main page',
-  },
-  {
-    key: '/ui',
-    icon: <VideoCameraOutlined />,
-    label: 'UI components',
-  },
-];
+type MenuItem = Required<MenuProps>['items'][number];
 
-export const Sidebar = ({ collapsed }: { collapsed: boolean }) => {
+interface Props {
+  collapsed: boolean;
+  setCollapsed: (collapsed: boolean) => void;
+}
+
+export const Sidebar = ({ collapsed, setCollapsed }: Props) => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const [isPinned, setIsPinned] = useState<boolean>(false);
 
   return (
     <Sider
@@ -29,16 +26,20 @@ export const Sidebar = ({ collapsed }: { collapsed: boolean }) => {
       collapsed={collapsed}
       theme="light"
       width={280}
-      className="h-screen">
+      collapsedWidth={80}
+      className="transition-all duration-200"
+      onMouseEnter={() => {
+        !isPinned && setCollapsed(false);
+      }}
+      onMouseLeave={() => !isPinned && setCollapsed(true)}>
       <Flex className="h-full flex-col">
-        <Logo collapsed={collapsed} />
+        <TopContent collapsed={collapsed} isPinned={isPinned} setIsPinned={setIsPinned} />
 
-        {/* TOP MENU */}
         <Menu
           theme="light"
           mode="inline"
           selectedKeys={[location.pathname]}
-          items={mainLinks}
+          items={routesList as unknown as MenuItem[]}
           onClick={({ key }) => navigate(key)}
           className="flex-1"
         />
