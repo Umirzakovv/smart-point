@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import React, { useState } from 'react';
 import { Outlet } from 'react-router';
-import { Sidebar } from 'widgets/sidebar';
+import { Sidebar } from 'widgets/shared/sidebar';
 
 const { Content } = Layout;
 
