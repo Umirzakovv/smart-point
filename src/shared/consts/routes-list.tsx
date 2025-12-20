@@ -1,6 +1,6 @@
 import ROUTES_PATHS from './routes-paths';
-import { SolutionOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { ExamplePage } from 'pages/example';
+import { SolutionOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { VacantsPage } from 'pages/hr/vacants';
 import { UIPage } from 'pages/ui';
 import type { ReactNode } from 'react';
 
@@ -25,9 +25,9 @@ export const routesList: IMenu[] = [
     element: <UIPage />,
   },
   {
-    key: ROUTES_PATHS.EXAMPLE,
-    label: 'Grid Example',
-    icon: <VideoCameraOutlined />,
-    element: <ExamplePage />,
+    key: ROUTES_PATHS.VACANTS,
+    label: 'Vacants',
+    icon: <UserOutlined />,
+    element: <VacantsPage />,
   },
 ];
