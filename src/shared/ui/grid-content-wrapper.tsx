@@ -1,5 +1,5 @@
 import { Col, Row } from 'antd';
-import { type ReactNode } from 'react';
+import { memo, type ReactNode } from 'react';
 import type { IDrawer } from 'shared/lib/types/drawer';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 const ALL_SPANS = 24;
 
-export const GridContentWrapper = ({ main, drawers }: Props) => {
+export const GridContentWrapper = memo(({ main, drawers }: Props) => {
   const usedSpans = drawers.reduce((s, i) => s + i.span, 0);
 
   if (usedSpans > ALL_SPANS) {
@@ -29,4 +29,4 @@ export const GridContentWrapper = ({ main, drawers }: Props) => {
       ))}
     </Row>
   );
-};
+});

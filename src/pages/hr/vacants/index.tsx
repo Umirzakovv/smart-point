@@ -1,26 +1,32 @@
+import { useCallback, memo } from 'react';
 import { GridContentWrapper } from 'shared/ui/grid-content-wrapper';
+import { useDrawerState, useDrawerActions } from 'app/providers/drawer/drawer-context';
 import { VacantsTable } from 'widgets/hr/vacants/vacants-table';
 import { VacantProfile } from 'widgets/hr/vacants/vacant-profile';
-import { useDrawer } from 'app/providers/drawer/drawer-context';
+
+const VacantsMain = memo(({ onRowClick }: { onRowClick: (id: string) => void }) => {
+  return (
+    <div>
+      <VacantsTable onRowClick={onRowClick} />
+    </div>
+  );
+});
 
 export const VacantsPage = () => {
-  const { drawers, openDrawer } = useDrawer();
-  console.log('rendered vacants page');
+  const drawers = useDrawerState();
+  const { openDrawer } = useDrawerActions();
 
+  const handleRowClick = useCallback(
+    (id: string) => {
+      openDrawer({
+        id: 'vacant-profile',
+        span: 6,
+        content: <VacantProfile vacantId={id} />,
+      });
+    },
+    [openDrawer],
+  );
   return (
-    <GridContentWrapper
-      main={
-        <VacantsTable
-          onRowClick={(id) =>
-            openDrawer({
-              id: 'vacant-profile',
-              span: 4,
-              content: <VacantProfile vacantId={id} />,
-            })
-          }
-        />
-      }
-      drawers={drawers}
-    />
+    <GridContentWrapper main={<VacantsMain onRowClick={handleRowClick} />} drawers={drawers} />
   );
 };
