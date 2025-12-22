@@ -2,7 +2,7 @@ const ROUTES_PATHS = {
   AUTH: '/auth',
   MAIN: '/',
   UI: '/ui',
-  EXAMPLE: '/example',
+  VACANTS: '/vacants',
 };
 
 export default ROUTES_PATHS;
