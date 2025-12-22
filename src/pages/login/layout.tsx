@@ -1,7 +1,6 @@
 import { Flex, Layout, Select } from 'antd';
 import { Outlet } from 'react-router';
 import { GlobalOutlined } from '@ant-design/icons';
-import { Logo } from 'widgets/sidebar/logo';
 
 const { Header, Content } = Layout;
 
@@ -30,7 +29,6 @@ const AuthLayout = () => {
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
-        <Logo collapsed />
         <Flex
           style={{
             background: '#fff',

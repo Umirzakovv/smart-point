@@ -1,5 +1,4 @@
 import { Form, Row, Col, Select, Typography, theme, Input, Button } from 'antd';
-import { Logo } from 'widgets/sidebar/logo';
 
 const { Title, Paragraph } = Typography;
 
@@ -29,9 +28,7 @@ export const ExamAuthForm = () => {
       <Row gutter={[0, 16]} justify="center">
         {/* Logo */}
         <Col span={24} style={{ display: 'flex', justifyContent: 'center' }}>
-          <div style={{ display: 'inline-flex' }}>
-            <Logo collapsed={false} />
-          </div>
+          <div style={{ display: 'inline-flex' }}></div>
         </Col>
 
         {/* Title */}
