@@ -9,6 +9,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
           colorPrimary: '#9FE870',
           colorError: '#DA1E28',
           fontFamily: 'Inter, sans-serif',
+          colorText: '#10170B',
+          colorTextSecondary: '#70746D',
         },
         components: {
           Menu: {

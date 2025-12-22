@@ -8,6 +8,8 @@ interface Props {
 }
 
 export const VacantProfile = ({ vacantId }: Props) => {
+  console.log(vacantId, 'vacantId');
+
   return (
     <div>
       <DrawerHeader title="Vacant profile" drawerId="vacant-profile" />
@@ -25,7 +27,6 @@ export const VacantProfile = ({ vacantId }: Props) => {
 
       {/* Tabs */}
       <ProfileTabs />
-      <p className="borderr">vacantId: {vacantId}</p>
     </div>
   );
 };
