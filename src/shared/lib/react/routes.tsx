@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
     element: <VacantAuthLayout />,
     children: [
       {
-        path: '/vacant-auth',
+        path: ROUTES_PATHS.VACANT_AUTH,
         element: <VacantAuth />,
       },
     ],
