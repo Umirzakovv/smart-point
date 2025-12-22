@@ -2,7 +2,7 @@ import { Form, Row, Col, Select, Typography, theme, Input, Button } from 'antd';
 
 const { Title, Paragraph } = Typography;
 
-export const ExamAuthForm = () => {
+export const VacantAuthForm = () => {
   const [form] = Form.useForm();
   const {
     token: { colorBgContainer, borderRadiusLG },

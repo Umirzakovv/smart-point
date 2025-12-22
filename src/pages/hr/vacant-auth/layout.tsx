@@ -11,7 +11,7 @@ const options = [
   { value: 'cy', label: 'CY' },
 ];
 
-const AuthLayout = () => {
+const VacantAuthLayout = () => {
   return (
     <Layout
       style={{
@@ -29,6 +29,7 @@ const AuthLayout = () => {
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
+        <p></p>
         <Flex
           style={{
             background: '#fff',
@@ -70,4 +71,4 @@ const AuthLayout = () => {
   );
 };
 
-export default AuthLayout;
+export default VacantAuthLayout;

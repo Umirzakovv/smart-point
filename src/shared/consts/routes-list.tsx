@@ -1,7 +1,7 @@
 import ROUTES_PATHS from './routes-paths';
 import { SolutionOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import { VacantsPage } from 'pages/hr/vacants';
-import { UIPage } from 'pages/ui';
+import { UIPage } from 'pages/shared/ui';
 import type { ReactNode } from 'react';
 
 export interface IMenu {
