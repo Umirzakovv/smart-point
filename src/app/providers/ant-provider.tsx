@@ -1,7 +1,7 @@
 import { ConfigProvider } from 'antd';
 import type { ReactNode } from 'react';
 
-export function AppProvider({ children }: { children: ReactNode }) {
+export function AntProvider({ children }: { children: ReactNode }) {
   return (
     <ConfigProvider
       theme={{

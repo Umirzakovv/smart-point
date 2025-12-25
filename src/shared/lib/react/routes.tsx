@@ -1,30 +1,14 @@
-import { VacantAuth } from 'pages/hr/vacant-auth';
-import VacantAuthLayout from 'pages/hr/vacant-auth/layout';
-import MainLayout from 'pages/layout';
-import { SharedAuthPage } from 'pages/shared/auth';
+import { UIPage } from 'pages/ui';
 import { createBrowserRouter } from 'react-router';
-import { routesList, type IMenu } from 'shared/consts/routes-list';
-import ROUTES_PATHS from 'shared/consts/routes-paths';
+import { ROUTES_PATHS } from './routes-paths';
 
 export const routes = createBrowserRouter([
   {
-    element: <MainLayout />,
-    children: routesList.map((route: IMenu) => ({
-      path: route.key,
-      element: route.element,
-    })),
+    path: ROUTES_PATHS.MAIN,
+    element: <div>Main page</div>,
   },
   {
-    path: ROUTES_PATHS.AUTH,
-    element: <SharedAuthPage />,
-  },
-  {
-    element: <VacantAuthLayout />,
-    children: [
-      {
-        path: ROUTES_PATHS.VACANT_AUTH,
-        element: <VacantAuth />,
-      },
-    ],
+    path: ROUTES_PATHS.UI,
+    element: <UIPage />,
   },
 ]);
