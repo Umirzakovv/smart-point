@@ -1,16 +1,17 @@
 @import 'tailwindcss';
 @import './ant.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --color-primary: #9fe870;
-  --color-secondary: #70746D;
+  --color-secondary: #70746d;
   --color-warning: #fff196;
   --color-danger: #da1e28;
 }
 
 html,
 body {
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Inter', system-ui, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

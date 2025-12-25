@@ -1,5 +1,11 @@
 /* Ant design base component style */
 
+.ant-typography,
+.ant-btn,
+.ant-input {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
 /* BUTTON */
 .ant-btn {
   padding-block: 20px;
