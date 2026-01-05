@@ -1,5 +1,11 @@
-import { Button } from 'antd';
+import { Button } from "antd"
 
-export const UIPage = () => {
-  return <Button type="primary">I am primary button</Button>;
-};
+const UIPage = () => {
+  return (
+    <>
+    <Button type="primary">button</Button>
+    </>
+  )
+}
+
+export default UIPage

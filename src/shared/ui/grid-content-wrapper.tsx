@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import { memo, type ReactNode } from 'react';
-import type { IDrawer } from 'shared/lib/types/drawer';
+import { IDrawer } from 'shared/lib/types/drawer';
 
 interface Props {
   main: ReactNode;
