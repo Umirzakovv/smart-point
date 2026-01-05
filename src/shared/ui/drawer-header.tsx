@@ -4,10 +4,10 @@ import { CloseOutlined } from '@ant-design/icons';
 
 interface Props {
   title: string;
-  drawerId: string;
+  // drawerId: string;
 }
 
-export const DrawerHeader = ({ title, drawerId }: Props) => {
+export const DrawerHeader = ({ title }: Props) => {
   // const { closeDrawerById } = useDrawerActions();
 
   return (

@@ -5,7 +5,6 @@ import { Link } from 'react-router';
 
 interface Props {
   title: string;
-  // drawerId: string;
 }
 
 export const Header = ({ title }: Props) => {
