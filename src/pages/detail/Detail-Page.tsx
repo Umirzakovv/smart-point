@@ -5,8 +5,8 @@ export const DetailPage = () => {
   return (
     <>
       <Container>
-        <Header title="Logo" drawerId=""/>
-        
+        <Header title="Logo" />
+
       </Container>
     </>
   )

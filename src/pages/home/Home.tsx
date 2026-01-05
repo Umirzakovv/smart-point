@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
     <Flex gap={"middle"} vertical>
-        <Header title="Logo" drawerId=""/>
+        <Header title="Logo"/>
         <Hero/>
         <Product/>
         <Footer/>

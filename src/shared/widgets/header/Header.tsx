@@ -5,10 +5,10 @@ import { Link } from 'react-router';
 
 interface Props {
   title: string;
-  drawerId: string;
+  // drawerId: string;
 }
 
-export const Header = ({ title, drawerId }: Props) => {
+export const Header = ({ title }: Props) => {
 
   return (
     <>
