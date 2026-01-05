@@ -7,10 +7,11 @@ export function AntProvider({ children }: { children: ReactNode }) {
       theme={{
         token: {
           fontFamily: 'Inter, system-ui, sans-serif',
-          colorPrimary: '#9FE870',
+          colorSuccess: '#0F62FE',
           colorError: '#DA1E28',
           colorText: '#10170B',
           colorTextSecondary: '#70746D',
+          colorBgLayout: '#F6F6F6'
         },
         components: {
           Menu: {
@@ -28,11 +29,15 @@ export function AntProvider({ children }: { children: ReactNode }) {
             fontSize: 16,
           },
           Button: {
-            borderRadius: 9999,
+            borderRadius: 12,
             colorBorderDisabled: 'transparent',
             primaryColor: '#000000',
             paddingInline: 24,
             fontSize: 16,
+              // primary btn 
+            colorPrimary: 'var(--color-primary)',
+            colorPrimaryHover: 'var(--color-primary)',
+            
           },
           Segmented: {
             itemColor: '#70746D',
@@ -43,8 +48,19 @@ export function AntProvider({ children }: { children: ReactNode }) {
             headerBorderRadius: 8,
           },
           Pagination: {
-            borderRadius: 9999,
+            itemActiveBg: 'var(--color-primary)',
+            itemActiveColor: 'var(--color-white)',
+            itemBg:'transparent',
+            itemActiveColorHover:'var(--color-white)'
           },
+          Card: {
+            borderRadius: 16,
+          },
+          Collapse:{
+            headerBg: 'var(--color-white)',
+            lineWidth:0,
+            
+          }
         },
       }}>
       {children}

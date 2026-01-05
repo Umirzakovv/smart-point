@@ -1,6 +1,6 @@
 import { Button, Flex, Typography } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import { useDrawerActions } from 'app/providers/drawer/drawer-context';
+// import { useDrawerActions } from 'app/providers/drawer/drawer-context';
 
 interface Props {
   title: string;
@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const DrawerHeader = ({ title, drawerId }: Props) => {
-  const { closeDrawerById } = useDrawerActions();
+  // const { closeDrawerById } = useDrawerActions();
 
   return (
     <Flex justify="space-between" align="center" className="mb-6!">
@@ -24,7 +24,7 @@ export const DrawerHeader = ({ title, drawerId }: Props) => {
           width: 43,
           height: 42,
         }}
-        onClick={() => closeDrawerById(drawerId)}
+        // onClick={() => closeDrawerById(drawerId)}
       />
     </Flex>
   );
