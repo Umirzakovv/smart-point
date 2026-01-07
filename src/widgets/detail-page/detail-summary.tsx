@@ -8,7 +8,7 @@ import { DetailLoaction } from './detail-loaction';
 import { DetailImages } from './detail-images';
 const { Text } = Typography;
 
-export const ProductSummary = () => {
+export const DetailSummary = () => {
   const { id } = useParams<{ id: string }>();
   const product = products.find((el) => el.id === Number(id));
 
@@ -17,7 +17,7 @@ export const ProductSummary = () => {
   if (!product) return <Text>Product not found</Text>;
 
   return (
-    <section className="mt-12">
+    <div className="mt-12">
       <Container>
         <DetailLoaction />
         <Row className="mt-12" gutter={60}>
@@ -70,6 +70,6 @@ export const ProductSummary = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </div>
   );
 };

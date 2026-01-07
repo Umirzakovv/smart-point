@@ -125,7 +125,7 @@ export const products: Product[] = [
       description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores ",
       price: 170,
       oldPrice: 200,
-      rating: 4.2,
+      rating: 5.0,
       isNew: false,
       colors: [
         {
