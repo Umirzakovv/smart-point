@@ -1,0 +1,465 @@
+import type { Product } from "./types"
+
+export const products: Product[] = [
+    {
+      id: 1,
+      title: "Product 1",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1 (1).png",
+      description: "Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. amet consectetur, adipisicing elit. Incidunt beatae iste voluptas quis cum nobis.",
+      price: 120,
+      oldPrice: 150,
+      rating: 4.5,
+      isNew: true,
+      colors: [
+      {
+        value: 'black',
+        hex: '#000',
+        image: '/images/hero.png'
+      },
+      {
+        value: 'white',
+        hex: '#fff',
+        image:'/images/Iphone 14 pro 1 (1).png'
+      },
+      {
+        value: 'silver',
+        hex: '#A4A4A6',
+        image: '/images/Rectangle 7 (1).png'
+      }
+    ]
+    },
+    {
+      id: 2,
+      title: "Product 2",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7.png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 130,
+      oldPrice: 160,
+      rating: 4.4,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Rectangle 7 (2).png'
+        },
+        {
+          value: 'white',
+          hex:'#fff',
+          image: '/images/Rectangle 7 (3).png'
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Product 3",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (1).png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt beatae iste ",
+      price: 140,
+      oldPrice: 170,
+      rating: 4.6,
+      isNew: true,
+      colors: [
+        {
+          value:'silver',
+          hex: '#A4A4A6',
+          image: '/images/Iphone 14 pro 1 (1).png'
+        }
+      ]
+    },
+    {
+      id: 4,
+      title: "Product 4",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1 (1).png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id ",
+      price: 150,
+      oldPrice: 180,
+      rating: 4.3,
+      isNew: false,
+      colors: [
+        {
+          value:'white',
+          hex:'#fff',
+          image: '/images/Rectangle 7 (3).png'
+        }
+      ]
+    },
+    {
+      id: 5,
+      title: "Product 5",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (3).png",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 160,
+      oldPrice: 190,
+      rating: 4.7,
+      isNew: true,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Rectangle 7 (2).png'
+        },
+        {
+          value: 'white',
+          hex: '#fff',
+          image: '/images/Rectangle 7 (1).png'
+        }
+      ]
+    },
+    {
+      id: 6,
+      title: "Product 6",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1.png",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores ",
+      price: 170,
+      oldPrice: 200,
+      rating: 4.2,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Iphone 14 pro 1 (1).png'
+        },
+        {
+          value: 'white',
+          hex: '#fff',
+          image: '/images/Rectangle 7 (1).png'
+        },
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image: '/images/Rectangle 7 (3).png'
+        }
+      ]
+    },
+    {
+      id: 7,
+      title: "Product 7",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1 (1).png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 175,
+      oldPrice: 210,
+      rating: 4.5,
+      isNew: true,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Iphone 14 pro 1 (1).png'
+        },
+        {
+          value:'white',
+          hex: '#fff',
+          image: 'Rectangle 7.png'
+        }
+      ]
+    },
+    {
+      id: 8,
+      title: "Product 8",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7.png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 180,
+      oldPrice: 220,
+      rating: 4.1,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Rectangle 7.png'
+        },
+        {
+          value:'white',
+          hex: '#fff',
+          image: 'Rectangle 7.png'
+        }
+      ]
+    },
+    {
+      id: 9,
+      title: "Product 9",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (1).png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ",
+      price: 185,
+      oldPrice: 225,
+      rating: 4.6,
+      isNew: true,
+      colors: [
+        {
+          value:'white',
+          hex: '#fff',
+          image: '/images/Iphone 14 pro 1.png'
+        }
+      ]
+    },
+    {
+      id: 10,
+      title: "Product 10",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (2).png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 190,
+      oldPrice: 230,
+      rating: 4.3,
+      isNew: false,
+      colors: [
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image: '/images/Iphone 14 pro 1.png'
+        }
+      ]
+    },
+    {
+      id: 11,
+      title: "Product 11",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (3).png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 195,
+      oldPrice: 240,
+      rating: 4.4,
+      isNew: true,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Iphone 14 pro 1.png'
+        },
+        {
+          value: 'white',
+          hex: '#fff',
+          image: '/images/Iphone 14 pro 1 (1).png'
+        }
+      ]
+    },
+    {
+      id: 12,
+      title: "Product 12",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1.png",
+      description: "Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam  ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 200,
+      oldPrice: 250,
+      rating: 4.2,
+      isNew: false,
+      colors: [
+        {
+          value:"white",
+          hex: '#fff',
+          image: '/images/Rectangle 7 (1).png'
+        },
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image: '/images/Iphone 14 pro 1.png'
+        }
+      ]
+    },
+    {
+      id: 13,
+      title: "Product 13",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: " /images/Rectangle 7.png",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat Lorem ipsum dolor sit amet consectetur, ",
+      price: 205,
+      oldPrice: 255,
+      rating: 4.6,
+      isNew: true,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image:'/images/Rectangle 7 (1).png'
+        },
+        {
+          value: 'white',
+          hex: '#fff',
+          image:'/images/Rectangle 7.png'
+        }
+      ]
+    },
+    {
+      id: 14,
+      title: "Product 14",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (1).png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis ",
+      price: 210,
+      oldPrice: 260,
+      rating: 4.3,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Iphone 14 pro 1.png'
+        },
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image:'/images/Rectangle 7 (1).png'
+        }
+      ]
+    },
+    {
+      id: 15,
+      title: "Product 15",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (3).png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 215,
+      oldPrice: 270,
+      rating: 4.5,
+      isNew: true,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Iphone 14 pro 1.png'
+        }
+      ]
+    },
+    {
+      id: 16,
+      title: "Product 16",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1.png",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 220,
+      oldPrice: 280,
+      rating: 4.1,
+      isNew: false,
+      colors:[
+        {
+          value: 'black',
+          hex: '#000',
+          image:'/images/Rectangle 7 (1).png'
+        },
+        {
+          value: 'white',
+          hex: '#fff',
+          image: '/images/Rectangle 7 (2).png'
+        },
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image: '/images/Rectangle 7 (3).png'
+        } 
+      ]
+    },
+    {
+      id: 17,
+      title: "Product 17",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (1).png",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores libero!",
+      price: 225,
+      oldPrice: 285,
+      rating: 4.7,
+      isNew: true,
+      colors: [
+        {
+          value: 'white',
+          hex:'#fff',
+          image:'/images/Iphone 14 pro 1.png'
+        }
+      ]
+    },
+    {
+      id: 18,
+      title: "Product 18",
+      category: 'laptop',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (2).png",
+      description: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id veniam facilis maiores ",
+      price: 230,
+      oldPrice: 290,
+      rating: 4.2,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Rectangle 7 (1).png'
+        },
+        {
+          value: 'white',
+          hex:'#fff',
+          image: '/images/Rectangle 7 (2).png',
+        }
+      ]
+    },
+    {
+      id: 19,
+      title: "Product 19",
+      category: 'earphone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Rectangle 7 (3).png",
+      description: "Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. sit amet consectetur, adipisicing elit. Numquam asperiores accusantium id",
+      price: 235,
+      oldPrice: 300,
+      rating: 4.4,
+      isNew: true,
+      colors: [
+        {
+          value:'white',
+          hex: '#fff',
+          image: '/images/Rectangle 7 (2).png'
+        },
+        {
+          value: 'silver',
+          hex: '#A4A4A6',
+          image: '/images/Rectangle 7 (2).png'
+        }
+      ]
+    },
+    {
+      id: 20,
+      title: "Product 20",
+      category: 'phone',
+      shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      image: "/images/Iphone 14 pro 1 (1).png",
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam asperiores accusantium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. ",
+      price: 240,
+      oldPrice: 310,
+      rating: 4.3,
+      isNew: false,
+      colors: [
+        {
+          value: 'black',
+          hex: '#000',
+          image: '/images/Rectangle 7 (3).png'
+        }
+      ]
+    },
+  ]
+  

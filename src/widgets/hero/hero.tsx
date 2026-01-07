@@ -1,7 +1,7 @@
 import { Button, Col, Flex, Row, Typography } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { Container } from '../../ui/container/Container';
-import { HERO_CONTENT } from './model/Hero-data';
+import { Container } from '../../shared/ui/Container';
+import { HERO_CONTENT } from './model/data';
 
 export const Hero = () => {
   const {description,image,release,title} = HERO_CONTENT

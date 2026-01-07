@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { FooterDataNav } from './model/Footer-Data';
+import { FooterDataNav } from './model/data';
 import { Flex, Typography } from 'antd';
 
 const { Text } = Typography;

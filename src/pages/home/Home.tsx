@@ -1,15 +1,15 @@
 import { Flex } from "antd"
-import { Footer } from "shared/widgets/footer/Footer"
-import { Header } from "shared/widgets/header/Header"
-import { Hero } from "shared/widgets/hero/Hero"
-import { Product } from "shared/widgets/product-catalog/Product"
+import { Footer } from "widgets/footer/footer"
+import { Header } from "widgets/header/header"
+import { Hero } from "widgets/hero/hero"
+import { Product } from "widgets/product-catalog/product"
 
 
 export const Home = () => {
   return (
     <>
     <Flex gap={"middle"} vertical>
-        <Header title="Logo"/>
+        <Header/>
         <Hero/>
         <Product/>
         <Footer/>

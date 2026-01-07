@@ -1,15 +1,15 @@
 import { Col, Flex, Row, Typography } from 'antd';
-import { Container } from 'shared/ui/container/Container';
+import { Container } from 'shared/ui/Container';
 
 import { useState } from 'react';
-import { ProductCard } from './Product-card';
-import { ProductPagination } from './Product-pagination';
-import { products } from './model/Product-Data';
+import { ProductCard } from './product-card';
+import { ProductPagination } from './product-pagination';
+import { products } from './model/data';
 import { Link, generatePath } from 'react-router';
 import { ROUTES_PATHS } from 'shared/lib/react/routes-paths';
-import { SortByFilter } from './product-filter/SortBy-Filter';
-import { CategoryFilter } from './product-filter/Category-Filter';
-import { BrandsFilter } from './product-filter/Brands-Filter';
+import { SortByFilter } from './product-filter/sortby-filter';
+// import { CategoryFilter } from './product-filter/Category-Filter';
+// import { BrandsFilter } from './product-filter/Brands-Filter';
 
 const PAGE_SIZE = 6;
 const { Text } = Typography;
@@ -24,14 +24,14 @@ export const Product = () => {
     <Container>
       <Row gutter={40} className="mt-20">
         <Col span={6}>
-          <Flex vertical gap={12}>
+          {/* <Flex vertical gap={12}>
             <Text style={{ fontSize: '24px', fontWeight: '700', paddingBottom: '40px' }}>
               Filters
             </Text>
 
             <CategoryFilter />
             <BrandsFilter />
-          </Flex>
+          </Flex> */}
         </Col>
 
         <Col span={18}>

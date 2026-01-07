@@ -1,8 +1,8 @@
 import { Flex } from "antd"
-import { Container } from "shared/ui/container/Container"
-import { FooterNav } from "./Footer-Nav"
-import { FooterLogo } from "./Footer-Logo"
-import { FooterSub } from "./Footer-Sub"
+import { Container } from "shared/ui/Container"
+import { FooterNav } from "./footer-nav"
+import { FooterLogo } from "./footer-logo"
+import { FooterSub } from "./footer-sub"
 
 export const Footer = () => {
   return (

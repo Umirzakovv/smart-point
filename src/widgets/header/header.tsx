@@ -1,13 +1,10 @@
 import { Button, Flex, Typography } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Container } from '../../ui/container/Container';
+import { Container } from '../../shared/ui/Container';
 import { Link } from 'react-router';
 
-interface Props {
-  title: string;
-}
 
-export const Header = ({ title }: Props) => {
+export const Header = () => {
 
   return (
     <>
@@ -16,7 +13,7 @@ export const Header = ({ title }: Props) => {
         <Flex justify="space-between" align="center">
           <Link to={'/'} className="flex items-center gap-2">
             <div className='w-9 h-9 bg-black rounded-full'></div>
-            <Typography.Title level={5}>{title}</Typography.Title>
+            <Typography.Title level={5}>Logo</Typography.Title>
           </Link>
           <Button
             color="default"
