@@ -3,7 +3,7 @@ import TextArea from 'antd/es/input/TextArea';
 import { useParams } from 'react-router';
 import { StarFilled } from '@ant-design/icons';
 import { products } from 'widgets/product-catalog/model/data';
-import FormItemLabel from 'antd/es/form/FormItemLabel';
+
 
 const { Text } = Typography;
 
