@@ -1,22 +1,11 @@
-import { Button, Flex } from 'antd';
+import { Button } from "antd"
 
-export const UIPage = () => {
+const UIPage = () => {
   return (
-    <div>
-      <Flex>
-        <Button type="primary">Primary</Button>
-        <Button type="text">Text</Button>
-        <Button color="default" variant="filled">
-          Filled button
-        </Button>
-        {/* Danger */}
-        <Button danger type="primary">
-          Primary danger
-        </Button>
-        <Button danger type="text">
-          Text danger
-        </Button>
-      </Flex>
-    </div>
-  );
-};
+    <>
+    <Button type="primary">button</Button>
+    </>
+  )
+}
+
+export default UIPage
