@@ -9,12 +9,13 @@ export interface Product {
     oldPrice: number,
     rating?: number,
     isNew: boolean,
-    colors?: ProductColor[],
+    colors?: ProductColorProps[],
 }
-export interface ProductColor{
+export interface ProductColorProps{
     value:string,
     hex:string,
-    image:string,
+    image:string[],
+    bataries:string,
 }
 export interface ProductCatalogProps {
     products: Product[]

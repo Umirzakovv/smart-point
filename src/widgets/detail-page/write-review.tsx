@@ -28,7 +28,7 @@ export const WriteReview = () => {
             }}
           />
         ))}
-        <Text>4.0 out of 5</Text>
+        <Text>{product.rating} out of 5</Text>
       </Flex>
 
       <Form layout="vertical">

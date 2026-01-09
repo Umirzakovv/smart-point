@@ -6,29 +6,32 @@ export const products: Product[] = [
       title: "Product 1",
       category: 'phone',
       shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
-      image: "/images/Iphone 14 pro 1 (1).png",
+      image: '/images/Iphone 14 pro 1 (1).png',
       description: "Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. amet consectetur, adipisicing elit. Incidunt beatae iste voluptas quis cum nobis.",
       price: 120,
       oldPrice: 150,
       rating: 4.5,
       isNew: true,
-      colors: [
-      {
-        value: 'black',
-        hex: '#000',
-        image: '/images/hero.png'
-      },
-      {
-        value: 'white',
-        hex: '#fff',
-        image:'/images/Iphone 14 pro 1 (1).png'
-      },
-      {
-        value: 'silver',
-        hex: '#A4A4A6',
-        image: '/images/Rectangle 7 (1).png'
-      }
-    ]
+      colors:[
+        {
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
+        }
+      ]
     },
     {
       id: 2,
@@ -41,16 +44,24 @@ export const products: Product[] = [
       oldPrice: 160,
       rating: 4.4,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Rectangle 7 (2).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
+          value:'White',
           hex:'#fff',
-          image: '/images/Rectangle 7 (3).png'
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '25 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '20 hours'
         }
       ]
     },
@@ -65,11 +76,24 @@ export const products: Product[] = [
       oldPrice: 170,
       rating: 4.6,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value:'silver',
-          hex: '#A4A4A6',
-          image: '/images/Iphone 14 pro 1 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/hero.png','/images/hero.png','/images/hero.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/hero.png','/images/hero.png','/images/hero.png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -84,11 +108,24 @@ export const products: Product[] = [
       oldPrice: 180,
       rating: 4.3,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value:'white',
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
           hex:'#fff',
-          image: '/images/Rectangle 7 (3).png'
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -103,16 +140,24 @@ export const products: Product[] = [
       oldPrice: 190,
       rating: 4.7,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Rectangle 7 (2).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
-          hex: '#fff',
-          image: '/images/Rectangle 7 (1).png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -127,21 +172,24 @@ export const products: Product[] = [
       oldPrice: 200,
       rating: 5.0,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Iphone 14 pro 1 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
-          hex: '#fff',
-          image: '/images/Rectangle 7 (1).png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
         },
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image: '/images/Rectangle 7 (3).png'
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -156,16 +204,24 @@ export const products: Product[] = [
       oldPrice: 210,
       rating: 4.5,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Iphone 14 pro 1 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          bataries:'35 hours'
         },
         {
-          value:'white',
-          hex: '#fff',
-          image: 'Rectangle 7.png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -180,16 +236,24 @@ export const products: Product[] = [
       oldPrice: 220,
       rating: 4.1,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Rectangle 7.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          bataries:'35 hours'
         },
         {
-          value:'white',
-          hex: '#fff',
-          image: 'Rectangle 7.png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -204,11 +268,24 @@ export const products: Product[] = [
       oldPrice: 225,
       rating: 4.6,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value:'white',
-          hex: '#fff',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -223,11 +300,24 @@ export const products: Product[] = [
       oldPrice: 230,
       rating: 4.3,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -242,16 +332,24 @@ export const products: Product[] = [
       oldPrice: 240,
       rating: 4.4,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
-          hex: '#fff',
-          image: '/images/Iphone 14 pro 1 (1).png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -266,16 +364,24 @@ export const products: Product[] = [
       oldPrice: 250,
       rating: 4.2,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value:"white",
-          hex: '#fff',
-          image: '/images/Rectangle 7 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          bataries:'35 hours'
         },
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -290,16 +396,24 @@ export const products: Product[] = [
       oldPrice: 255,
       rating: 4.6,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image:'/images/Rectangle 7 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
-          hex: '#fff',
-          image:'/images/Rectangle 7.png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -314,16 +428,24 @@ export const products: Product[] = [
       oldPrice: 260,
       rating: 4.3,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries:'35 hours'
         },
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image:'/images/Rectangle 7 (1).png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -338,11 +460,24 @@ export const products: Product[] = [
       oldPrice: 270,
       rating: 4.5,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Iphone 14 pro 1.png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -359,20 +494,23 @@ export const products: Product[] = [
       isNew: false,
       colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image:'/images/Rectangle 7 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
-          hex: '#fff',
-          image: '/images/Rectangle 7 (2).png'
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
         },
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image: '/images/Rectangle 7 (3).png'
-        } 
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
+        }
       ]
     },
     {
@@ -386,11 +524,24 @@ export const products: Product[] = [
       oldPrice: 285,
       rating: 4.7,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value: 'white',
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
           hex:'#fff',
-          image:'/images/Iphone 14 pro 1.png'
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -405,16 +556,24 @@ export const products: Product[] = [
       oldPrice: 290,
       rating: 4.2,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Rectangle 7 (1).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png'],
+          bataries:'35 hours'
         },
         {
-          value: 'white',
+          value:'White',
           hex:'#fff',
-          image: '/images/Rectangle 7 (2).png',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -429,16 +588,24 @@ export const products: Product[] = [
       oldPrice: 300,
       rating: 4.4,
       isNew: true,
-      colors: [
+      colors:[
         {
-          value:'white',
-          hex: '#fff',
-          image: '/images/Rectangle 7 (2).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          bataries:'35 hours'
         },
         {
-          value: 'silver',
-          hex: '#A4A4A6',
-          image: '/images/Rectangle 7 (2).png'
+          value:'White',
+          hex:'#fff',
+          image: ['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },
@@ -453,11 +620,24 @@ export const products: Product[] = [
       oldPrice: 310,
       rating: 4.3,
       isNew: false,
-      colors: [
+      colors:[
         {
-          value: 'black',
-          hex: '#000',
-          image: '/images/Rectangle 7 (3).png'
+          value:'Black',
+          hex:'#000',
+          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          bataries:'35 hours'
+        },
+        {
+          value:'White',
+          hex:'#fff',
+          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          bataries: '33 hours'
+        },
+        {
+          value:'Silver',
+          hex:'#7A7777',
+          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          bataries: '30 hours'
         }
       ]
     },

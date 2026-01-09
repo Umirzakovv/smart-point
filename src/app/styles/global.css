@@ -5,11 +5,19 @@
   --color-primary: #0F62FE;
   --color-secondary: #70746d;
   --color-warning: #ffe74f;
+  --color-success-txt: #0C9725;
+  --color-success: #D9FDD4;
   --color-danger: #da1e28;
   --color-white: #ffffff;
   --color-muted: #DCEAFB;
 }
 
+.success{
+  color: var(--color-success-txt);
+  background-color:var(--color-success);
+  border-radius: 20px;
+  padding: 2px 8px;
+}
 
 html,
 body {

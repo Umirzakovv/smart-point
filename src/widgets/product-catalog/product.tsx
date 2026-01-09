@@ -7,7 +7,7 @@ import { ProductPagination } from './product-pagination';
 import { products } from './model/data';
 import { Link, generatePath } from 'react-router';
 import { ROUTES_PATHS } from 'shared/lib/react/routes-paths';
-import { SortByFilter } from './product-filter/sortby-filter';
+// import { SortByFilter } from './product-filter/sortby-filter';
 // import { CategoryFilter } from './product-filter/Category-Filter';
 // import { BrandsFilter } from './product-filter/Brands-Filter';
 
@@ -22,8 +22,8 @@ export const Product = () => {
 
   return (
     <Container>
-      <Row gutter={40} className="mt-20">
-        <Col span={6}>
+      {/* <Row gutter={40} className="mt-20"> */}
+        {/* <Col span={6}> */}
           {/* <Flex vertical gap={12}>
             <Text style={{ fontSize: '24px', fontWeight: '700', paddingBottom: '40px' }}>
               Filters
@@ -32,25 +32,22 @@ export const Product = () => {
             <CategoryFilter />
             <BrandsFilter />
           </Flex> */}
-        </Col>
+        {/* </Col> */}
 
-        <Col span={18}>
-          <Flex justify="space-between" align="start">
+        {/* <Col span={18}> */}
+          <Flex justify="space-between" align="center">
             <Flex vertical style={{ paddingBottom: '40px' }}>
               <Text style={{ fontSize: '30px', fontWeight: 700 }}>New Arrivals</Text>
               <Text type="secondary">
                 Showing {page}-{PAGE_SIZE} / {products.length} products
               </Text>
             </Flex>
-            <Flex align="center" gap={5}>
-              <Text type="secondary">Sort by:</Text>
-              <SortByFilter />
-            </Flex>
           </Flex>
-          <Row gutter={[24, 24]}>
+          <Row gutter={[24, 24]} justify={'center'}>
             {currentProducts.map((product) => (
-              <Col span={8} key={product.id}>
+              <Col span={8} key={product.id} >
                 <Link
+                  style={{display:'flex',justifyContent:'center'}}
                   to={generatePath(ROUTES_PATHS.DETAIL, {
                     id: product.id,
                   })}>
@@ -63,8 +60,8 @@ export const Product = () => {
           <div style={{ marginTop: 32 }}>
             <ProductPagination total={products.length} pageSize={PAGE_SIZE} onChange={setPage} />
           </div>
-        </Col>
-      </Row>
+        {/* </Col> */}
+      {/* </Row> */}
     </Container>
   );
 };

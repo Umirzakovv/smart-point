@@ -5,7 +5,7 @@ const { Text } = Typography;
 import { products } from 'widgets/product-catalog/model/data';
 
 
-export const DetailLoaction = () => {
+export const DetailLocation = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const product = products.find((el) => el.id === Number(id));

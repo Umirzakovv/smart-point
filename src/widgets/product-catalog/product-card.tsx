@@ -9,7 +9,7 @@ const { Text } = Typography;
 
 export const ProductCard = ({ product }: Props) => {
   const { title,shortDesc,image, price, oldPrice, rating, isNew } = product;
-
+    
   return (
     <Card 
     hoverable

@@ -11,7 +11,9 @@ export function AntProvider({ children }: { children: ReactNode }) {
           colorError: '#DA1E28',
           colorText: '#10170B',
           colorTextSecondary: '#70746D',
-          colorBgLayout: '#F6F6F6'
+          colorBgLayout: '#F6F6F6',
+          colorSuccessText: '#0C9725',
+          colorSuccessBg: '#D9FDD4',
         },
         components: {
           Menu: {
@@ -37,7 +39,6 @@ export function AntProvider({ children }: { children: ReactNode }) {
               // primary btn 
             colorPrimary: 'var(--color-primary)',
             colorPrimaryHover: 'var(--color-primary)',
-            
           },
           Segmented: {
             itemColor: '#70746D',

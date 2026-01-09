@@ -1,38 +1,40 @@
-// ProductImages.tsx
-import { Flex } from 'antd';
-import type { ProductColor } from 'widgets/product-catalog/model/types';
 
-interface ProductImagesProps {
-  colors?: ProductColor[];
-  selectedColor: ProductColor | null;
-  onSelectColor: (color: ProductColor) => void;
+import { Row, Col, Image } from 'antd';
+import type { ProductColorProps } from 'widgets/product-catalog/model/types';
+
+interface DetailImagesProps {
+  productImage: string;
+  colors?: ProductColorProps[];
+  selectedColor: ProductColorProps | null;
+  onSelectColor: (color: ProductColorProps) => void;
 }
 
-export const DetailImages = ({ colors, selectedColor, onSelectColor }: ProductImagesProps) => {
-  return (
-    <Flex vertical gap={24}>
-     <div className='w-full h-[550px]'>
-        <img
-            src={selectedColor?.image || colors?.[0]?.image}
-            alt={selectedColor?.value}
-            className="w-full h-full object-contain rounded-xl border border-black"
-        />
-        
-     </div>
+export const DetailImages = ({
+  productImage,
+  colors = [],
+  selectedColor,
+  onSelectColor,
+}: DetailImagesProps) => {
+  const mainImage = selectedColor?.image || productImage;
 
-      <Flex gap={20}>
-        {colors?.map((el) => (
-          <img
-            key={el.hex}
-            src={el.image}
-            alt={el.value}
-            className={`w-40 h-40 object-cover rounded-xl cursor-pointer border-2 ${
-              selectedColor?.value === el.value ? 'border-[var(--color-primary)]' : 'border-[var(--color-secondary)]'
-            }`}
-            onClick={() => onSelectColor(el)}
-          />
-        ))}
-      </Flex>
-    </Flex>
+  return (
+    <div>
+      <div style={{ textAlign: 'center', marginBottom: 16 }}>
+        <img src={mainImage} alt="product" className="w-[670px] h-[590px] object-contain" />
+      </div>
+
+        <Row gutter={[12, 12]} justify="center" style={{ marginBottom: 16 }}>
+          {colors.map((color) => (
+            <Col key={color.hex}>
+              <img
+                className={`w-36 h-36 object-contain ${selectedColor?.hex === color.hex ? 'border border-[var(--color-primary)] rounded-xl' : ''}`}
+                src={color.image}
+                alt=""
+                onClick={() => onSelectColor(color)}
+              />
+            </Col>
+          ))}
+        </Row>
+    </div>
   );
 };
