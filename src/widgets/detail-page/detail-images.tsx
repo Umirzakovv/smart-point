@@ -1,5 +1,4 @@
-
-import { Row, Col, Image } from 'antd';
+import { Row, Col, } from 'antd';
 import type { ProductColorProps } from 'widgets/product-catalog/model/types';
 
 interface DetailImagesProps {
@@ -16,7 +15,8 @@ export const DetailImages = ({
   onSelectColor,
 }: DetailImagesProps) => {
   const mainImage = selectedColor?.image || productImage;
-
+  
+  
   return (
     <div>
       <div style={{ textAlign: 'center', marginBottom: 16 }}>

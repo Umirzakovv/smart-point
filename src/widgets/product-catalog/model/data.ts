@@ -6,7 +6,7 @@ export const products: Product[] = [
       title: "Product 1",
       category: 'phone',
       shortDesc: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
-      image: '/images/Iphone 14 pro 1 (1).png',
+      image: "/images/Iphone 14 pro 1 (1).png",
       description: "Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quod sed aliquid est repellat architecto quisquam reprehenderit doloribus. amet consectetur, adipisicing elit. Incidunt beatae iste voluptas quis cum nobis.",
       price: 120,
       oldPrice: 150,
@@ -16,19 +16,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          image: '/images/Iphone 14 pro 1 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -48,19 +48,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          image: '/images/Rectangle 7.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '25 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '20 hours'
         }
       ]
@@ -80,19 +80,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image: '/images/Rectangle 7 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/hero.png','/images/hero.png','/images/hero.png'],
+          image:'/images/hero.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/hero.png','/images/hero.png','/images/hero.png'],
+          image:'/images/hero.png',
           bataries: '30 hours'
         }
       ]
@@ -112,19 +112,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          image: '/images/Iphone 14 pro 1 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -144,19 +144,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          image: '/images/Rectangle 7 (3).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -176,19 +176,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          image: '/images/Iphone 14 pro 1.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -208,19 +208,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          image: '/images/Iphone 14 pro 1 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -240,19 +240,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          image: '/images/Rectangle 7.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -272,19 +272,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image: '/images/Rectangle 7 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -304,19 +304,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png'],
+          image: '/images/Rectangle 7 (2).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -336,19 +336,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          image: '/images/Rectangle 7 (3).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -368,19 +368,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          image: '/images/Iphone 14 pro 1.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -400,19 +400,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7.png','/images/Rectangle 7.png','/images/Rectangle 7.png'],
+          image: '/images/Rectangle 7.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -432,19 +432,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image: '/images/Rectangle 7 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -464,19 +464,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          image: '/images/Rectangle 7 (3).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -496,19 +496,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png','/images/Iphone 14 pro 1.png'],
+          image: '/images/Iphone 14 pro 1.png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -528,19 +528,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image: '/images/Rectangle 7 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -560,19 +560,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png','/images/Rectangle 7 (2).png'],
+          image: '/images/Rectangle 7 (2).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -592,19 +592,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png','/images/Rectangle 7 (3).png'],
+          image: '/images/Rectangle 7 (3).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image: ['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]
@@ -624,19 +624,19 @@ export const products: Product[] = [
         {
           value:'Black',
           hex:'#000',
-          image: ['/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png','/images/Iphone 14 pro 1 (1).png'],
+          image: '/images/Iphone 14 pro 1 (1).png',
           bataries:'35 hours'
         },
         {
           value:'White',
           hex:'#fff',
-          image:['/images/img2.png','/images/img2.png','/images/img2.png'],
+          image:'/images/img2.png',
           bataries: '33 hours'
         },
         {
           value:'Silver',
           hex:'#7A7777',
-          image:['/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png','/images/Rectangle 7 (1).png'],
+          image:'/images/Rectangle 7 (1).png',
           bataries: '30 hours'
         }
       ]

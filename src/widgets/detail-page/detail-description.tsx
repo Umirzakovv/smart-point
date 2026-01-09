@@ -79,7 +79,22 @@ export const DetailDescription = () => {
               <Text type="secondary">Color: {selectedColor?.value}</Text>
 
               <Flex gap={20}>
-                
+                {
+                  product.colors?.map((el) => (
+                    <Button
+                      style={{
+                        backgroundColor: el.hex,
+                        width: '40px',
+                        height: '40px',
+                        padding: 0,
+                        borderRadius:'50%'
+                      }}  
+                      onClick={() => setSelectedColor(el)}
+                    >
+
+                    </Button>
+                  ))
+                }
               </Flex>
               <Form>
                 <Form.Item>
