@@ -1,8 +1,8 @@
 import { Flex } from "antd"
-import { Footer } from "widgets/footer/footer"
-import { Header } from "widgets/header/header"
-import { Hero } from "widgets/hero/hero"
-import { Product } from "widgets/product-catalog/product"
+import { Footer } from "shared/ui/footer/footer"
+import { Header } from "shared/ui/header/header"
+import { Hero } from "widgets/home/hero/hero"
+import { Product } from "widgets/home/product-catalog/product"
 
 
 export const Home = () => {

@@ -4,7 +4,7 @@ import { Flex, Typography, theme } from 'antd';
 const { Text } = Typography;
 
 export const FooterLogo = () => {
-  const { token } = theme.useToken(); // ✅ TO‘G‘RI JOY
+  // const { token } = theme.useToken(); // ✅ TO‘G‘RI JOY 
 
   return (
     <Flex vertical className="w-sm" gap={20}>
@@ -22,11 +22,11 @@ export const FooterLogo = () => {
 
       <Flex gap={12}>
         <a href="#">
-          <InstagramOutlined style={{ color: token.colorTextSecondary,fontSize:'30px' }} />
+          <InstagramOutlined className='text-[var(--color-secondary)]! text-3xl'  />
         </a>
 
         <a href="#">
-          <SendOutlined style={{ color: token.colorTextSecondary,fontSize:'30px' }} />
+          <SendOutlined className='text-[var(--color-secondary)]! text-3xl'/>
         </a>
       </Flex>
     </Flex>

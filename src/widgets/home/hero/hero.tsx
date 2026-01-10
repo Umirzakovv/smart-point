@@ -1,7 +1,14 @@
 import { Button, Col, Flex, Row, Typography } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { Container } from '../../shared/ui/Container';
-import { HERO_CONTENT } from './model/data';
+import { Container } from '../../../shared/ui/container';
+
+export const HERO_CONTENT = {
+  release: 'NEW RELEASE',
+  title: 'The Future of Sound. Silence the Noise.',
+  description:
+    'Experience the next level Tech Noise-Cancelling Series X1 with premium audio fidelity and 40h battery life.',
+  image: '/images/hero.png',
+};
 
 export const Hero = () => {
   const {description,image,release,title} = HERO_CONTENT
@@ -11,7 +18,7 @@ export const Hero = () => {
         <Row align="middle" className="bg-[var(--color-white)] rounded-3xl px-12">
           <Col span={12}>
             <Flex align="start" vertical gap={25}>
-              <Typography.Text type='success' className="bg-[var(--color-muted)] text-[var(--color-primary)] px-3 py-1 rounded-full">
+              <Typography.Text type='success' className="bg-[var(--color-muted)] text-[var(--color-primary)]! px-3 py-1 rounded-full">
                 {release}
               </Typography.Text>
 
@@ -24,11 +31,12 @@ export const Hero = () => {
                   type="primary"                  
                   iconPlacement='end'
                   icon={<ArrowRightOutlined/>}
-                  style={{ color: 'var(--color-white)', padding: '18px 16px' }}>
+                  className='text-[var(--color-white)]! py-5 px-4'
+                  >
                   Shop now
                 </Button>
 
-                <Button style={{ padding: '18px 16px' }}>Watch video</Button>
+                <Button className='p-4'>Watch video</Button>
               </Flex>
             </Flex>
           </Col>

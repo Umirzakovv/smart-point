@@ -6,7 +6,7 @@ export const SortByFilter = () => {
       <Space wrap>
         <Select
           defaultValue="Most Popular"
-          style={{ width: '190px', color: 'var(--color-secondary)' }}
+          className='w-48 text-[var(--color-secondary)]!'
           options={[
             { value: 'Most Popular', label: 'Most Popular' },
             { value: 'lucy', label: 'Lucy' },

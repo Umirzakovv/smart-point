@@ -1,6 +1,6 @@
 import { Flex, Typography } from "antd"
 import { PoweroffOutlined } from "@ant-design/icons"
-import type { ProductColorProps } from "widgets/product-catalog/model/types"
+import type { ProductColorProps } from "widgets/home/product-catalog/model/types"
 
 const { Text } = Typography
 
@@ -8,7 +8,7 @@ interface DetailHighlightsProps {
   colors?: ProductColorProps[]
 }
 
-export const DetailHighlights = ({ colors = [] }: DetailHighlightsProps) => {
+export const Highlights = ({ colors = [] }: DetailHighlightsProps) => {
   return (
     <div className="p-5 w-full bg-[var(--color-white)] rounded-xl">
         <Flex vertical gap={15}>

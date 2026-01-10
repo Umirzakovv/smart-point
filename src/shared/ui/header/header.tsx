@@ -1,6 +1,6 @@
-import { Button, Flex, Typography } from 'antd';
+import { Button, Flex, Typography,Image } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Container } from '../../shared/ui/Container';
+import { Container } from '../container';
 import { Link } from 'react-router';
 
 
@@ -12,14 +12,14 @@ export const Header = () => {
       <Container>
         <Flex justify="space-between" align="center">
           <Link to={'/'} className="flex items-center gap-2">
-            <div className='w-9 h-9 bg-black rounded-full'></div>
-            <Typography.Title level={5}>Logo</Typography.Title>
+            <Image src='/images/main-logo.jpg' preview={false} className='w-10! h-10! rounded-full'/>
+            <Typography.Title level={5}>Smart Point </Typography.Title>
           </Link>
           <Button
             color="default"
             variant="filled"
-            icon={<ShoppingCartOutlined style={{fontSize:'22px'}}/>}
-            style={{ background: 'transparent'}}
+            icon={<ShoppingCartOutlined className='text-xl!'/>}
+            className='bg-transparent!'
           />
         </Flex>
       </Container>

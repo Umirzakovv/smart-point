@@ -55,13 +55,12 @@ export function AntProvider({ children }: { children: ReactNode }) {
             itemActiveColorHover:'var(--color-white)'
           },
           Card: {
-            borderRadius: 16,
+            borderRadius: 20,
           },
           Collapse:{
             headerBg: 'var(--color-white)',
-            lineWidth:0,
-            
-          }
+            lineWidth:0,            
+          },
         },
       }}>
       {children}

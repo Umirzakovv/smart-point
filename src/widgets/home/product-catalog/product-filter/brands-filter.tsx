@@ -2,7 +2,7 @@ import { Collapse, Radio } from 'antd';
 import { useState } from 'react';
 import { DownOutlined } from '@ant-design/icons';
 
-export const CategoryFilter = () => {
+export const BrandsFilter = () => {
   const [active, setActive] = useState<string[]>();
 
   return (
@@ -11,16 +11,16 @@ export const CategoryFilter = () => {
         activeKey={active}
         expandIcon={({ isActive }) => <DownOutlined rotate={isActive ? 180 : 0} />}
         expandIconPlacement='end'
-        style={{padding:'10px 0'}}
+        className='py-2!'
         items={[
           {
             key: '1',
-            label: 'Categories',
+            label: 'Brand Filters',
             children: (
-              <Radio.Group style={{display:'flex',flexDirection:'column',gap:'15px'}}>
-                <Radio value="phone">Smartphone</Radio>
-                <Radio value="laptop">Laptops & PC</Radio>
-                <Radio value="wearable">Wearables</Radio>
+              <Radio.Group className='flex! flex-col gap-3.5' >
+                <Radio className='w-full' value="phone">Smartphone</Radio>
+                <Radio className='w-full' value="laptop">Laptops & PC</Radio>
+                <Radio className='w-full' value="wearable">Wearables</Radio>
               </Radio.Group>
             ),
           },
