@@ -1,5 +1,5 @@
 import { Flex, Image } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { ProductColorProps } from "widgets/home/product-catalog/model/types";
 
 interface DetailImagesProps {
@@ -8,7 +8,9 @@ interface DetailImagesProps {
 
 export const Images = ({ selectedColor }: DetailImagesProps) => {
   const [selectedImgIndex, setSelectedImg] = useState(0);
-
+  useEffect(() =>{
+    setSelectedImg(0)
+  },[selectedColor])
   return (
     <Flex vertical gap={24}>
       <Image

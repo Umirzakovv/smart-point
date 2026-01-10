@@ -12,6 +12,7 @@ interface ReviewProps {
 
 const { Text } = Typography;
 const star = [1,2,3,4,5]
+
 export const PostReview = () => {
   const [review, setReview] = useState<ReviewProps>({
     rating: 0,
@@ -19,6 +20,7 @@ export const PostReview = () => {
   });
   const { id } = useParams<{ id: string }>();
   const product = products.find((el) => el.id === Number(id));  
+
   const handleSubmit = () => {
     if (!review.rating || !review.msg.trim()) {
       message.warning('Iltimos, baho va izoh kiriting');
