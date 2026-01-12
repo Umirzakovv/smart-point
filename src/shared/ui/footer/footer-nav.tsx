@@ -13,7 +13,7 @@ export const FooterNav = () => {
             {item.links.map((link) => (
               <li className='pb-4' key={link.label}>
                 <Link to={link.href}>
-                  <Text type='secondary' style={{ fontSize: '16px', }}>
+                  <Text type='secondary' className='text-xl' >
                     {link.label}
                   </Text>
                 </Link>

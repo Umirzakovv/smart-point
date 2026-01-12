@@ -14,8 +14,7 @@ export interface Product {
 export interface ProductColorProps{
     value:string,
     hex:string,
-    image:string,
-    bataries:string,
+    image:string[],
 }
 export interface ProductCatalogProps {
     products: Product[]
