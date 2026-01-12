@@ -4,6 +4,13 @@ import type { ReactNode } from 'react';
 export function AntProvider({ children }: { children: ReactNode }) {
   return (
     <ConfigProvider
+      componentSize="large"
+      modal={{
+        mask: {
+          enabled: true,
+          blur: false,
+        },
+      }}
       theme={{
         token: {
           fontFamily: 'Inter, system-ui, sans-serif',
@@ -36,7 +43,7 @@ export function AntProvider({ children }: { children: ReactNode }) {
             primaryColor: '#000000',
             paddingInline: 24,
             fontSize: 16,
-              // primary btn 
+            // primary btn
             colorPrimary: 'var(--color-primary)',
             colorPrimaryHover: 'var(--color-primary)',
           },
@@ -51,17 +58,16 @@ export function AntProvider({ children }: { children: ReactNode }) {
           Pagination: {
             itemActiveBg: 'var(--color-primary)',
             itemActiveColor: 'var(--color-white)',
-            itemBg:'transparent',
-            itemActiveColorHover:'var(--color-white)'
+            itemBg: 'transparent',
+            itemActiveColorHover: 'var(--color-white)',
           },
           Card: {
             borderRadius: 16,
           },
-          Collapse:{
+          Collapse: {
             headerBg: 'var(--color-white)',
-            lineWidth:0,
-            
-          }
+            lineWidth: 0,
+          },
         },
       }}>
       {children}
