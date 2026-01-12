@@ -1,6 +1,6 @@
 import { Form, Select, Space } from 'antd';
 
-export const SortByFilter = () => {
+export const SortBy = () => {
   return (
     <Form>
       <Space wrap>

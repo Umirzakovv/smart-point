@@ -1,6 +1,6 @@
 import { Button, Flex, Typography,Image } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import { Container } from '../container';
+import { Container } from './container';
 import { Link } from 'react-router';
 
 

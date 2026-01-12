@@ -1,14 +1,13 @@
-import { Col, Flex, Row, Typography } from 'antd';
+import { Col, Flex, Pagination, Row, Typography } from 'antd';
 import { Container } from 'shared/ui/container';
 import { useState } from 'react';
-import { ProductCard } from './product-card';
-import { ProductPagination } from './product-pagination';
+import { ProductCard } from './card';
 import { products } from './model/data';
 import { Link, generatePath } from 'react-router';
 import { ROUTES_PATHS } from 'shared/lib/react/routes-paths';
-// import { SortByFilter } from './product-filter/sortby-filter';
-// import { CategoryFilter } from './product-filter/category-filter';
-// import { BrandsFilter } from './product-filter/brands-filter';
+// import {SortBy} from './product-filter/sortby'
+// import {Category} from './product-filter/category';
+// import { Brands} from './product-filter/brands';
 
 const PAGE_SIZE = 8;
 const { Text } = Typography;
@@ -18,9 +17,8 @@ export const Product = () => {
 
   const start = (page - 1) * PAGE_SIZE;
   const currentProducts = products.slice(start, start + PAGE_SIZE);
-
   return (
-    <Container>
+    <Container >
       {/* <Row gutter={40} className="mt-20">
         <Col span={6}>
           <Flex vertical gap={12}>
@@ -43,7 +41,7 @@ export const Product = () => {
             </Flex>
             
           </Flex>
-          <Row gutter={[28, 28]} justify={'space-between'}>
+          <Row gutter={[25, 25]} justify={'space-between'}>
             {currentProducts.map((product) => (
               <Col span={6} key={product.id} className='px-0!'>
                 <Link
@@ -58,7 +56,7 @@ export const Product = () => {
           </Row>
 
           <div className='mt-8'>
-            <ProductPagination total={products.length} pageSize={PAGE_SIZE} onChange={setPage} />
+            <Pagination align="center" total={products.length} pageSize={PAGE_SIZE} onChange={setPage} showSizeChanger={false}/>
           </div>
         {/* </Col> */}
       {/* </Row>  */}

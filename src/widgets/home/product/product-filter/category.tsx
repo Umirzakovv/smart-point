@@ -2,7 +2,7 @@ import { Collapse, Radio } from 'antd';
 import { useState } from 'react';
 import { DownOutlined } from '@ant-design/icons';
 
-export const CategoryFilter = () => {
+export const Category = () => {
   const [active, setActive] = useState<string[]>();
 
   return (

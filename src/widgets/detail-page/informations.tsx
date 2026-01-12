@@ -1,11 +1,12 @@
 import { Col, Row, Typography, Button, Flex, Breadcrumb } from 'antd';
 import { Link, useParams } from 'react-router';
 import { Container } from 'shared/ui/container';
-import { products } from 'widgets/home/product-catalog/model/data';
+import { products } from 'widgets/home/product/model/data';
 import { PoweroffOutlined, StarFilled } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
-import type { ProductColorProps } from 'widgets/home/product-catalog/model/types';
+import type { ProductColorProps } from 'widgets/home/product/model/types';
 import { Images} from './images';
+import { BookModal } from 'shared/ui/book-modal';
 
 const { Text } = Typography;
 const star = [1, 2, 3, 4, 5];
@@ -15,9 +16,12 @@ export const Informations = () => {
     const [selectedColor, setSelectedColor] = useState<ProductColorProps | null>(
         product?.colors?.[0] || null,
     )
+    const [handleOpen,setHandleOpen] = useState(false)
+
     useEffect(() =>{
         window.scrollTo(0,0)
     },[])
+
   return (
     <Container>
       <Breadcrumb
@@ -59,7 +63,18 @@ export const Informations = () => {
                     ))}
                 </Flex>     
 
-                <Button type='primary' className='w-full text-[var(--color-white)]! py-6! rounded-3xl! !'>Add to bag</Button>
+                <Button onClick={() => setHandleOpen(true)} type='primary' className='rounded-3xl! text-[var(--color-white)]!'>
+                    Sotib olish
+                </Button>
+                <BookModal 
+                    isOpen={handleOpen}
+                    handleCancel={() => setHandleOpen(false)}
+                    productTitle={product?.title}
+                    productPrice={product?.price}
+                    image={selectedColor?.image[0]}
+                    activeColor={selectedColor?.value}
+                />
+
                 <Flex vertical gap={17} className='mt-14! bg-[var(--color-white)] px-5! py-5! rounded-xl!'>
                     <Text className='font-semibold'>Highlights</Text>
                     <Text type='secondary'> <PoweroffOutlined className='text-[var(--color-primary)]! text-[16px]!' /> 36 hours bataries</Text>

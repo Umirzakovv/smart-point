@@ -1,6 +1,6 @@
 import { Button, Col, Flex, Row, Typography } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { Container } from '../../../shared/ui/container';
+import { Container } from '../../shared/ui/container';
 
 export const HERO_CONTENT = {
   release: 'NEW RELEASE',
