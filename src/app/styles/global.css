@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
+@import './ant.css';
 
 :root {
-  --color-primary: #0F62FE;
+  --color-primary: #0f62fe;
   --color-secondary: #70746d;
-  --color-warning: #fff196;
+  --color-warning: #ffe74f;
+  --color-success-txt: #0c9725;
+  --color-success: #d9fdd4;
   --color-danger: #da1e28;
   --color-white: #ffffff;
-  --color-muted: #DCEAFB;
+  --color-muted: #dceafb;
 }
 
+.success {
+  color: var(--color-success-txt);
+  background-color: var(--color-success);
+  border-radius: 20px;
+  padding: 2px 8px;
+}
 
 html,
 body {
@@ -19,7 +28,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .borderr {

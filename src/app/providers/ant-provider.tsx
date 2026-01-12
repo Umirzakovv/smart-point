@@ -4,6 +4,13 @@ import type { ReactNode } from 'react';
 export function AntProvider({ children }: { children: ReactNode }) {
   return (
     <ConfigProvider
+      componentSize="large"
+      modal={{
+        mask: {
+          enabled: true,
+          blur: false,
+        },
+      }}
       theme={{
         token: {
           fontFamily: 'Inter, system-ui, sans-serif',
@@ -11,7 +18,9 @@ export function AntProvider({ children }: { children: ReactNode }) {
           colorError: '#DA1E28',
           colorText: '#10170B',
           colorTextSecondary: '#70746D',
-          colorBgLayout: '#F6F6F6'
+          colorBgLayout: '#F6F6F6',
+          colorSuccessText: '#0C9725',
+          colorSuccessBg: '#D9FDD4',
         },
         components: {
           Menu: {
@@ -34,10 +43,9 @@ export function AntProvider({ children }: { children: ReactNode }) {
             primaryColor: '#000000',
             paddingInline: 24,
             fontSize: 16,
-              // primary btn 
+            // primary btn
             colorPrimary: 'var(--color-primary)',
             colorPrimaryHover: 'var(--color-primary)',
-            
           },
           Segmented: {
             itemColor: '#70746D',
@@ -50,17 +58,16 @@ export function AntProvider({ children }: { children: ReactNode }) {
           Pagination: {
             itemActiveBg: 'var(--color-primary)',
             itemActiveColor: 'var(--color-white)',
-            itemBg:'transparent',
-            itemActiveColorHover:'var(--color-white)'
+            itemBg: 'transparent',
+            itemActiveColorHover: 'var(--color-white)',
           },
           Card: {
-            borderRadius: 16,
+            borderRadius: 20,
           },
-          Collapse:{
+          Collapse: {
             headerBg: 'var(--color-white)',
-            lineWidth:0,
-            
-          }
+            lineWidth: 0,
+          },
         },
       }}>
       {children}
