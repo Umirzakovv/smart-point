@@ -36,7 +36,7 @@ export const BookModal = ({
     handleCancel()
   };
 
-  function handleEnter(e:React.KeyboardEvent){
+  function handleEnterPress(e:React.KeyboardEvent){
     if (e.key === 'Enter') {
       form.submit()
     }
@@ -70,7 +70,7 @@ export const BookModal = ({
         <Form 
           layout="vertical" 
           form={form}
-          onKeyDown={(e) => handleEnter(e)}
+          onKeyDown={(e) => handleEnterPress(e)}
           onFinish={(values) => handleSubmit(values)}
         >
           <Form.Item 
