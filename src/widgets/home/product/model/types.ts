@@ -1,21 +1,20 @@
 export interface Product {
     id: string | number,
     title: string,
-    category: string,
     shortDesc:string,
     image:string,
     description: string,
-    price: number,
-    oldPrice: number,
+    originalPrice: number,
+    discountPrice?: number,
     rating?: number,
-    isNew: boolean,
-    colors?: ProductColorProps[],
+    highlights?: Hightlight[]
 }
-export interface ProductColorProps{
-    value:string,
-    hex:string,
-    image:string[],
+
+interface Hightlight {
+    title: string;
+    value: string;
 }
+
 export interface ProductCatalogProps {
     products: Product[]
 }

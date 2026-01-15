@@ -8,9 +8,10 @@
   --color-warning: #ffe74f;
   --color-success-txt: #0c9725;
   --color-success: #d9fdd4;
-  --color-danger: #da1e28;
+  --color-danger: #FF6700;
   --color-white: #ffffff;
   --color-muted: #dceafb;
+  --color-black:#000;
 }
 
 .success {

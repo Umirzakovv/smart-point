@@ -1,10 +1,12 @@
-import { Flex, Form, Input, Modal,  Typography, message } from 'antd';
+import { Flex, Form, Input, Modal, Typography, message } from 'antd';
+import { userOrder } from 'shared/api/order';
+import type { UserOrderInfo } from 'shared/api/type';
 import type React from 'react';
+import { Loading } from './loading';
 
 interface Props {
   productTitle: string;
   productPrice: number;
-  activeColor:string,
   isOpen: boolean;
   handleCancel: () => void;
   image: string;
@@ -12,86 +14,93 @@ interface Props {
 
 interface FormValue {
   name: string;
-  phoneNumber: string; 
+  phoneNumber: string;
 }
 
 export const BookModal = ({
   productTitle,
   productPrice,
-  activeColor,
   isOpen,
   handleCancel,
-  image
+  image,
 }: Props) => {
   const [form] = Form.useForm<FormValue>();
+  const {createUserOrder,loading} = userOrder()
 
   const handleSubmit = (values: FormValue) => {
-    console.log('values', values);
-    form.resetFields()
+    const newOrderUser:UserOrderInfo = {
+      product: productTitle,
+      customerName: values.name,
+      phoneNumber: `+998${values.phoneNumber}`,
+    }
+    createUserOrder(newOrderUser)
+    message.success('Tez orada siz bilan bog‘lanamiz');
+    form.resetFields();
+    handleCancel();
   };
 
-  const handleModalOk = () => {
-    form.submit(); 
-    message.success('Tez orada siz bilan bog`lanamiz')
-    handleCancel()
-  };
-
-  function handleEnterPress(e:React.KeyboardEvent){
+ 
+  function handleEnterPress (e:React.KeyboardEvent) {
     if (e.key === 'Enter') {
-      form.submit()
+        form.submit()
     }
   }
-  
+
   return (
     <Modal
       title="Sotib olish"
-      closable
       open={isOpen}
-      onOk={handleModalOk}
+      onCancel={handleCancel}
       okText="Buyurtma qilish"
       cancelText="Bekor qilish"
-      okButtonProps={{ style: { color: 'var(--color-white)' } }}
-      onCancel={handleCancel}
-    >
-      <Flex vertical>
+      okButtonProps={{ style: { color: 'var(--color-white)' }, disabled: loading, loading }}
+      onOk={() => form.submit()} >
+      <Flex vertical gap={16}>
         <Flex>
-          <img 
-            src={image} 
-            alt="Product image" 
-            className='w-1/3! h-40 object-contain!' 
+          <img
+            src={image}
+            alt="Product image"
+            className="w-1/3! h-40 object-contain!"
           />
           <div className="w-2/3 ml-4 flex flex-col gap-3">
             <Typography.Title level={3}>{productTitle}</Typography.Title>
             <Typography.Text>Narxi: ${productPrice}</Typography.Text>
-            <Typography.Text>Rangi: {activeColor}</Typography.Text>
           </div>
         </Flex>
 
-        <Form 
-          layout="vertical" 
+        <Form
+          layout="vertical"
           form={form}
-          onKeyDown={(e) => handleEnterPress(e)}
-          onFinish={(values) => handleSubmit(values)}
+          onFinish={handleSubmit} 
+          onKeyDown={handleEnterPress}
         >
-          <Form.Item 
-            label="Ism" 
+          <Form.Item
+            label="Ism"
             name="name"
-            rules={[{ required: true, message: 'Iltimos, ismingizni kiriting' }]}
+            required
+            rules={[
+              { required: true, message: 'Iltimos, ismingizni kiriting' },
+            ]}
           >
             <Input placeholder="Ismingizni kiriting..." />
           </Form.Item>
-          
-          <Form.Item 
-            label="Telefon raqami" 
+
+          <Form.Item
+            label="Telefon raqami"
             name="phoneNumber"
             rules={[
-              { required: true, message: 'Iltimos, telefon raqamingizni kiriting' },
+              { required: true, message: 'Telefon raqamingizni kiriting' },
+              {
+                pattern: /^[0-9]{9}$/,
+                message: '9 xonali raqam kiriting',
+              },
             ]}
           >
-            <Input 
+            <Input
               addonBefore="+998"
-              placeholder="99 999 99 99" 
+              placeholder="99 999 99 99"
               maxLength={9}
+              required
             />
           </Form.Item>
         </Form>

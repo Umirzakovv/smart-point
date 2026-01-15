@@ -18,7 +18,7 @@ export const Product = () => {
   const start = (page - 1) * PAGE_SIZE;
   const currentProducts = products.slice(start, start + PAGE_SIZE);
   return (
-    <Container >
+    <Container>
       {/* <Row gutter={40} className="mt-20">
         <Col span={6}>
           <Flex vertical gap={12}>
@@ -41,7 +41,7 @@ export const Product = () => {
             </Flex>
             
           </Flex>
-          <Row gutter={[25, 25]} justify={'space-between'}>
+          <Row gutter={[5, 20]}>
             {currentProducts.map((product) => (
               <Col span={6} key={product.id} className='px-0!'>
                 <Link

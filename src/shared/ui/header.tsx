@@ -15,12 +15,14 @@ export const Header = () => {
             <Image src='/images/main-logo.jpg' preview={false} className='w-10! h-10! rounded-full'/>
             <Typography.Title level={5}>Smart Point </Typography.Title>
           </Link>
-          <Button
-            color="default"
-            variant="filled"
-            icon={<ShoppingCartOutlined className='text-xl!'/>}
-            className='bg-transparent!'
-          />
+            {/* <Link to={'/basket'}>  */}
+              <Button
+                color="default"
+                variant="filled"
+                icon={<ShoppingCartOutlined className='text-xl!'/>}
+                className='bg-transparent!'
+              />
+            {/* </Link> */}
         </Flex>
       </Container>
       </header>
