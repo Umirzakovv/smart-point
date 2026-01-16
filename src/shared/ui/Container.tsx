@@ -1,9 +1,9 @@
-interface ContainerProps {
+interface Props {
   children: React.ReactNode;
   className?: string;
 }
 
-export const Container = ({ children, className }: ContainerProps) => {
+export const Container = ({ children, className }: Props) => {
   return (
     <div
       className={` ${className} w-full! mx-auto! px-4

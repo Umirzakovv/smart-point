@@ -1,6 +1,6 @@
 import { Flex, Typography } from 'antd';
 import { Link } from 'react-router';
-import { Container } from 'shared/ui/container';
+import { Container } from 'shared/ui/Container';
 
 const { Text } = Typography;
 

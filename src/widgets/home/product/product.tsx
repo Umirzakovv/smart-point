@@ -1,5 +1,5 @@
 import { Col, Flex, Pagination, Row, Typography } from 'antd';
-import { Container } from 'shared/ui/container';
+import { Container } from 'shared/ui/Container';
 import { useState } from 'react';
 import { ProductCard } from './card';
 import { products } from './model/data';

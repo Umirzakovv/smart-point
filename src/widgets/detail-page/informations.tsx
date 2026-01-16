@@ -1,6 +1,6 @@
 import { Col, Row, Typography, Button, Flex, Breadcrumb, Image } from 'antd';
 import { Link, useParams } from 'react-router';
-import { Container } from 'shared/ui/container';
+import { Container } from 'shared/ui/Container';
 import { products } from 'widgets/home/product/model/data';
 import { PoweroffOutlined, StarFilled } from '@ant-design/icons';
 import { useEffect, useState } from 'react';

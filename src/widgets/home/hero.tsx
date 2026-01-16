@@ -1,5 +1,5 @@
 import { Button, Col, Flex, Row } from 'antd';
-import { Container } from '../../shared/ui/container';
+import { Container } from '../../shared/ui/Container';
 import { useState } from 'react';
 import { BookModal } from '../../shared/ui/book-modal';
 

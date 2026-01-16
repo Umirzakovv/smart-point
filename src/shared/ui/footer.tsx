@@ -1,5 +1,5 @@
 import { Col, Flex, Row, Typography } from 'antd';
-import { Container } from 'shared/ui/container';
+import { Container } from 'shared/ui/Container';
 import { InstagramOutlined, SendOutlined } from '@ant-design/icons';
 import { FooterDataNav } from './footer-nav';
 import { Link } from 'react-router';

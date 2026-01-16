@@ -1,4 +1,4 @@
-import { Container } from 'shared/ui/container';
+import { Container } from 'shared/ui/Container';
 import { Header } from 'shared/ui/header';
 import { Button, Col, Flex, Form, Image, Input, Row, Space, Typography } from 'antd';
 import {

@@ -1,5 +1,5 @@
 import { Flex, Typography, Image, Button } from 'antd';
-import { Container } from './container';
+import { Container } from './Container';
 import { Link } from 'react-router';
 import { useTheme } from 'app/providers/theme-context';
 import { MoonOutlined, SunOutlined } from '@ant-design/icons';
