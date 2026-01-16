@@ -12,6 +12,20 @@
   --color-white: #ffffff;
   --color-muted: #dceafb;
   --color-black:#000;
+  --color-bg-layout: #f6f6f6;
+}
+
+html.dark {
+  --color-primary: #FF6700;
+  --color-secondary: #a6a6a6;
+  --color-warning: #ffe74f;
+  --color-success-txt: #4ade80;
+  --color-success: #052e16;
+  --color-danger: #ef4444;
+  --color-white: #1f1f1f;
+  --color-muted: #1e293b;
+  --color-black: #fff;
+  --color-bg-layout: #141414;
 }
 
 .success {
@@ -29,7 +43,8 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: var(--color-bg-layout);
+  color: var(--color-black);
 }
 
 .borderr {

@@ -1,12 +1,16 @@
 import { AntProvider } from './ant-provider';
 import { RouterProviderWrapper } from './routerProvider';
 import { StoreProvider } from './storeProvider';
+import { ThemeProvider } from './theme-context';
+
 export const Providers = () => {
   return (
     <StoreProvider>
-      <AntProvider>
+      <ThemeProvider>
+        <AntProvider>
           <RouterProviderWrapper />
-      </AntProvider>
+        </AntProvider>
+      </ThemeProvider>
     </StoreProvider>
   );
 };

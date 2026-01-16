@@ -1,11 +1,9 @@
-import { Button, Col, Flex, Row, Typography } from 'antd';
-import { ArrowRightOutlined } from '@ant-design/icons';
+import { Button, Col, Flex, Row } from 'antd';
 import { Container } from '../../shared/ui/container';
 import { useState } from 'react';
 import { BookModal } from '../../shared/ui/book-modal';
 
 export const HERO_CONTENT = {
-  release: 'NEW ARRIVAL',
   title: 'Smart Shaving. Effortless Performance.',
   productName: 'Xiaomi Electric Shaver S301',
   description:
@@ -15,7 +13,7 @@ export const HERO_CONTENT = {
 };
 
 export const Hero = () => {
-  const {description,image,release,title, price, productName} = HERO_CONTENT
+  const { description, image, title, price, productName } = HERO_CONTENT
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleCancel = () => {
@@ -28,9 +26,6 @@ export const Hero = () => {
         <Row align="middle" className="bg-[var(--color-white)] rounded-3xl px-6 md:px-12 py-8 md:py-0">
           <Col xs={24} md={12}>
             <Flex align="start" vertical gap={25}>
-              <Typography.Text type='success' className="bg-[var(--color-muted)] text-[var(--color-primary)]! px-3 py-1 rounded-full">
-                {release}
-              </Typography.Text>
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">{title}</h1>
               <p className="text-base text-secondary max-w-lg">
@@ -38,12 +33,11 @@ export const Hero = () => {
               </p>
               <Flex gap={16}>
                 <Button
-                  type="primary"                  
+                  type="primary"
                   iconPlacement='end'
-                  icon={<ArrowRightOutlined/>}
                   className='text-[var(--color-white)]! py-5 px-4'
                   onClick={() => setIsModalOpen(true)}
-                  >
+                >
                   Shop now
                 </Button>
 

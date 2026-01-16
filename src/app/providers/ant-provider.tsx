@@ -1,7 +1,10 @@
-import { ConfigProvider } from 'antd';
+import { ConfigProvider, theme as antTheme } from 'antd';
 import type { ReactNode } from 'react';
+import { useTheme } from './theme-context';
 
 export function AntProvider({ children }: { children: ReactNode }) {
+  const { theme } = useTheme();
+
   return (
     <ConfigProvider
       componentSize="large"
@@ -12,21 +15,22 @@ export function AntProvider({ children }: { children: ReactNode }) {
         },
       }}
       theme={{
+        algorithm: theme === 'dark' ? antTheme.darkAlgorithm : antTheme.defaultAlgorithm,
         token: {
           fontFamily: 'Inter, system-ui, sans-serif',
           colorSuccess: '#0F62FE',
           colorError: '#DA1E28',
           // colorText: '#10170B',
           colorTextSecondary: '#70746D',
-          colorBgLayout: '#F6F6F6',
+          colorBgLayout: theme === 'dark' ? '#141414' : '#F6F6F6',
           colorSuccessText: '#0C9725',
           colorSuccessBg: '#D9FDD4',
         },
         components: {
           Menu: {
-            itemActiveBg: '#fff',
-            itemSelectedBg: '#fff',
-            itemSelectedColor: '#000',
+            itemActiveBg: theme === 'dark' ? '#1f1f1f' : '#fff',
+            itemSelectedBg: theme === 'dark' ? '#1f1f1f' : '#fff',
+            itemSelectedColor: theme === 'dark' ? '#fff' : '#000',
           },
           // Form
           Input: {
@@ -47,10 +51,11 @@ export function AntProvider({ children }: { children: ReactNode }) {
           },
           Segmented: {
             itemColor: '#70746D',
+            itemSelectedBg: theme === 'dark' ? '#303030' : '#fff',
           },
           Table: {
             headerColor: '#70746D',
-            headerBg: '#f5f5f5',
+            headerBg: theme === 'dark' ? '#1f1f1f' : '#f5f5f5',
             headerBorderRadius: 8,
           },
           Pagination: {
@@ -63,7 +68,7 @@ export function AntProvider({ children }: { children: ReactNode }) {
             borderRadius: 20,
           },
           Collapse: {
-            headerBg: 'var(--color-white)',
+            headerBg: theme === 'dark' ? '#1f1f1f' : 'var(--color-white)',
             lineWidth: 0,
           },
         },
