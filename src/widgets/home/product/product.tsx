@@ -49,19 +49,18 @@ export const Product = () => {
 
       {/* <Col span={18}> */}
       <Flex justify="space-between" align="center">
-        <Flex vertical className='pb-10!'>
-          <Text className='text-3xl! font-bold'>New Arrivals</Text>
+        <Flex vertical className="pb-10!">
+          <Text className="text-3xl! font-bold">New Arrivals</Text>
           <Text type="secondary">
             Showing {page}-{Math.min(products.length, PAGE_SIZE)} / {products.length} products
           </Text>
         </Flex>
-
       </Flex>
       <Row gutter={[16, 24]}>
         {currentProducts.map((product) => (
-          <Col xs={24} sm={12} md={8} lg={6} key={product.id} className='px-0!'>
+          <Col xs={24} sm={12} md={8} lg={6} key={product.id} className="px-0!">
             <Link
-              className='flex! justify-center!'
+              className="flex! justify-center!"
               to={generatePath(ROUTES_PATHS.DETAIL, {
                 id: product.id,
               })}>
@@ -71,8 +70,16 @@ export const Product = () => {
         ))}
       </Row>
 
-      <div className='mt-8'>
-        {products.length > 16 && <Pagination align="center" total={products.length} pageSize={PAGE_SIZE} onChange={setPage} showSizeChanger={false} />}
+      <div className="mt-8">
+        {products.length > 16 && (
+          <Pagination
+            align="center"
+            total={products.length}
+            pageSize={PAGE_SIZE}
+            onChange={setPage}
+            showSizeChanger={false}
+          />
+        )}
       </div>
 
       {selectedProduct && (

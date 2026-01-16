@@ -1,5 +1,3 @@
 export const ReviewsSummary = () => {
-  return (
-    <div>reviews-summary</div>
-  )
-}
+  return <div>reviews-summary</div>;
+};

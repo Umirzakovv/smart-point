@@ -3,5 +3,5 @@ export const ROUTES_PATHS = {
   DETAIL: '/detail/:id',
   BASKET: '/basket',
   UI: '/ui',
-  NOTFOUND: '*'
+  NOTFOUND: '*',
 };

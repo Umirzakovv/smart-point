@@ -9,19 +9,19 @@ import { Basket } from 'widgets/home/basket';
 export const routes = createBrowserRouter([
   {
     path: ROUTES_PATHS.MAIN,
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: ROUTES_PATHS.DETAIL,
-    element: <DetailPage/>,
+    element: <DetailPage />,
   },
   {
     path: ROUTES_PATHS.BASKET,
-    element: <Basket/>,
+    element: <Basket />,
   },
   {
     path: ROUTES_PATHS.NOTFOUND,
-    element: <NotFound/>,
+    element: <NotFound />,
   },
   {
     path: ROUTES_PATHS.UI,

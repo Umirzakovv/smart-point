@@ -13,7 +13,7 @@ export const HERO_CONTENT = {
 };
 
 export const Hero = () => {
-  const { description, image, title, price, productName } = HERO_CONTENT
+  const { description, image, title, price, productName } = HERO_CONTENT;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleCancel = () => {
@@ -23,21 +23,19 @@ export const Hero = () => {
   return (
     <section>
       <Container>
-        <Row align="middle" className="bg-[var(--color-white)] rounded-3xl px-6 md:px-12 py-8 md:py-0">
+        <Row
+          align="middle"
+          className="bg-[var(--color-white)] rounded-3xl px-6 md:px-12 py-8 md:py-0">
           <Col xs={24} md={12}>
             <Flex align="start" vertical gap={25}>
-
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">{title}</h1>
-              <p className="text-base text-secondary max-w-lg">
-                {description}
-              </p>
+              <p className="text-base text-secondary max-w-lg">{description}</p>
               <Flex gap={16}>
                 <Button
                   type="primary"
-                  iconPlacement='end'
-                  className='text-[var(--color-white)]! py-5 px-4'
-                  onClick={() => setIsModalOpen(true)}
-                >
+                  iconPlacement="end"
+                  className="text-[var(--color-white)]! py-5 px-4"
+                  onClick={() => setIsModalOpen(true)}>
                   Shop now
                 </Button>
 
@@ -46,11 +44,7 @@ export const Hero = () => {
             </Flex>
           </Col>
           <Col xs={24} md={12} className="py-8 md:py-14">
-            <img
-              src={image}
-              alt="Hero product preview"
-              className="w-full h-auto object-contain"
-            />
+            <img src={image} alt="Hero product preview" className="w-full h-auto object-contain" />
           </Col>
         </Row>
       </Container>

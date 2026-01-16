@@ -11,7 +11,6 @@ export const Footer = () => {
       <footer className="bg-[var(--color-white)] pt-20 mt-36 flex flex-col gap-16">
         <Container>
           <Row gutter={[32, 32]}>
-
             {/* Footer logo  */}
             <Col xs={24} md={12}>
               <Flex vertical gap={20} className="w-full ">
@@ -22,21 +21,25 @@ export const Footer = () => {
                   </Text>
                 </Flex>
 
-                <Text type="secondary" className='w-full md:w-3/4'>
+                <Text type="secondary" className="w-full md:w-3/4">
                   Your one-stop destination for premium electronics, gadgets and accessories.
                   Experience the future of technology today.
                 </Text>
 
                 <Flex gap={12} vertical>
-                  <Text className='text-lg font-semibold'>Bog'lanish</Text>
-                  <a href="tel:+998901234567" className='hover:text-[var(--color-primary)] transition-colors'>
-                    <Text type="secondary" className='text-lg'>+998 90 123 45 67</Text>
+                  <Text className="text-lg font-semibold">Bog'lanish</Text>
+                  <a
+                    href="tel:+998901234567"
+                    className="hover:text-[var(--color-primary)] transition-colors">
+                    <Text type="secondary" className="text-lg">
+                      +998 90 123 45 67
+                    </Text>
                   </a>
-                  <Flex gap={12} className='mt-2'>
-                    <a href="#" className='hover:opacity-80 transition-opacity'>
+                  <Flex gap={12} className="mt-2">
+                    <a href="#" className="hover:opacity-80 transition-opacity">
                       <InstagramOutlined className="text-[var(--color-secondary)]! text-3xl" />
                     </a>
-                    <a href="#" className='hover:opacity-80 transition-opacity'>
+                    <a href="#" className="hover:opacity-80 transition-opacity">
                       <SendOutlined className="text-[var(--color-secondary)]! text-3xl" />
                     </a>
                   </Flex>
@@ -46,7 +49,7 @@ export const Footer = () => {
 
             {/* footer nav  */}
             <Col xs={24} md={12}>
-              <Flex gap={60} className='flex-col md:flex-row md:gap-40'>
+              <Flex gap={60} className="flex-col md:flex-row md:gap-40">
                 {FooterDataNav.map((item) => (
                   <Flex vertical key={item.title} gap={20}>
                     <b className="text-xl">{item.title}</b>
@@ -66,7 +69,6 @@ export const Footer = () => {
               </Flex>
             </Col>
           </Row>
-
         </Container>
         <Flex align="center" justify="center">
           <Text type="secondary">© 2025 • All Rights Reserved</Text>

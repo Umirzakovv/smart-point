@@ -20,34 +20,37 @@ export const Informations = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
-
   return (
-    <Container >
+    <Container>
       <Breadcrumb
         separator=">"
         items={[{ title: <Link to="/#products">Home</Link> }, { title: `${product?.title}` }]}
       />
       <Row className="mt-8 md:mt-14" justify="space-between" gutter={[0, 24]}>
         <Col xs={24} md={11}>
-          <Flex className='w-full! flex! items-center! justify-center! bg-[var(--color-white)]! rounded-3xl! border border-[var(--color-primary)]! p-4'>
-            <Image src={product?.image} width={'100%'} preview={false} className="object-contain max-h-[400px] md:max-h-[590px]" />
+          <Flex className="w-full! flex! items-center! justify-center! bg-[var(--color-white)]! rounded-3xl! border border-[var(--color-primary)]! p-4">
+            <Image
+              src={product?.image}
+              width={'100%'}
+              preview={false}
+              className="object-contain max-h-[400px] md:max-h-[590px]"
+            />
           </Flex>
         </Col>
         <Col xs={24} md={11}>
           <Flex vertical gap={20} className="md:gap-25">
-            <Text className="text-[28px] md:text-[42px]! font-medium leading-tight">{product?.title}</Text>
+            <Text className="text-[28px] md:text-[42px]! font-medium leading-tight">
+              {product?.title}
+            </Text>
 
-            {
-              product?.rating && (
-                <Flex align="center" gap={7}>
-                  {star.map((star) => (
-                    <StarFilled key={star} className="text-[var(--color-warning)]!" />
-                  ))}
-                  <Text className="text-[var(--color-warning)]!">{product?.rating}</Text>
-                </Flex>
-              )
-            }
+            {product?.rating && (
+              <Flex align="center" gap={7}>
+                {star.map((star) => (
+                  <StarFilled key={star} className="text-[var(--color-warning)]!" />
+                ))}
+                <Text className="text-[var(--color-warning)]!">{product?.rating}</Text>
+              </Flex>
+            )}
 
             <Flex align="center" gap={17} wrap="wrap">
               {product?.discountPrice && (
@@ -90,15 +93,13 @@ export const Informations = () => {
               vertical
               gap={17}
               className="mt-6 md:mt-12! bg-[var(--color-white)] px-5! py-5! rounded-xl!">
-
               <Text className="font-semibold">Highlights</Text>
-              {
-                highlights?.map((highlight: Hightlight) => (
-                  <Text key={highlight.title} type="secondary">
-                    <PoweroffOutlined className="text-[var(--color-primary)]! text-[16px]!" /> {highlight.value}
-                  </Text>
-                ))
-              }
+              {highlights?.map((highlight: Hightlight) => (
+                <Text key={highlight.title} type="secondary">
+                  <PoweroffOutlined className="text-[var(--color-primary)]! text-[16px]!" />{' '}
+                  {highlight.value}
+                </Text>
+              ))}
             </Flex>
           </Flex>
         </Col>

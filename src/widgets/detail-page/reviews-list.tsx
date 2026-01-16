@@ -1,6 +1,3 @@
-
 export const ReviewsList = () => {
-  return (
-    <div>reviews-list</div>
-  )
-}
+  return <div>reviews-list</div>;
+};
