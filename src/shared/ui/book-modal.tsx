@@ -22,9 +22,9 @@ export const BookModal = ({ productTitle, productPrice, isOpen, handleCancel, im
 
   const handleSubmit = (values: FormValue) => {
     const newOrderUser: UserOrderInfo = {
-      product: productTitle,
-      customerName: values.name,
-      phoneNumber: `+998${values.phoneNumber}`,
+      name: values.name,
+      phone: `+998${values.phoneNumber}`,
+      productName: productTitle,
     };
     createUserOrder(newOrderUser);
     message.success('Tez orada siz bilan bog‘lanamiz');

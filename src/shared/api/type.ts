@@ -1,5 +1,5 @@
 export interface UserOrderInfo {
-  product: string;
-  customerName: string;
-  phoneNumber: string;
+  productName: string;
+  name: string;
+  phone: string;
 }

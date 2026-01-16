@@ -8,7 +8,7 @@ export const useOrder = () => {
   const createUserOrder = async (order: UserOrderInfo) => {
     setLoading(true);
     try {
-      const res = await api.post('/order', order);
+      const res = await api.post('/send-order', order);
       return res.data;
     } catch (error) {
       console.error('Order yaratishda xatolik:', error);
