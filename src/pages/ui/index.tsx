@@ -15,7 +15,7 @@ const UIPage = () => {
         productPrice={149}
         isOpen={isOpen}
         handleCancel={onClose}
-        handleOk={onOpen}
+        image="/images/shaver.png"
       />
     </>
   );

@@ -3,12 +3,12 @@
 @import './ant.css';
 
 :root {
-  --color-primary: #0f62fe;
+  --color-primary: #FF6700;
   --color-secondary: #70746d;
   --color-warning: #ffe74f;
   --color-success-txt: #0c9725;
   --color-success: #d9fdd4;
-  --color-danger: #FF6700;
+  --color-danger: #ac0d0d;
   --color-white: #ffffff;
   --color-muted: #dceafb;
   --color-black:#000;

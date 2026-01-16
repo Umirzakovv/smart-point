@@ -10,7 +10,7 @@ export interface Product {
     highlights?: Hightlight[]
 }
 
-interface Hightlight {
+export interface Hightlight {
     title: string;
     value: string;
 }

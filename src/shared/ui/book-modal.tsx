@@ -2,7 +2,6 @@ import { Flex, Form, Input, Modal, Typography, message } from 'antd';
 import { userOrder } from 'shared/api/order';
 import type { UserOrderInfo } from 'shared/api/type';
 import type React from 'react';
-import { Loading } from './loading';
 
 interface Props {
   productTitle: string;
@@ -56,13 +55,13 @@ export const BookModal = ({
       okButtonProps={{ style: { color: 'var(--color-white)' }, disabled: loading, loading }}
       onOk={() => form.submit()} >
       <Flex vertical gap={16}>
-        <Flex>
+        <Flex className="flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0">
           <img
             src={image}
             alt="Product image"
-            className="w-1/3! h-40 object-contain!"
+            className="w-full sm:w-1/3! h-40 object-contain!"
           />
-          <div className="w-2/3 ml-4 flex flex-col gap-3">
+          <div className="w-full sm:w-2/3 sm:ml-4 flex flex-col gap-3 text-center sm:text-left">
             <Typography.Title level={3}>{productTitle}</Typography.Title>
             <Typography.Text>Narxi: ${productPrice}</Typography.Text>
           </div>

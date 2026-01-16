@@ -16,7 +16,7 @@ export function AntProvider({ children }: { children: ReactNode }) {
           fontFamily: 'Inter, system-ui, sans-serif',
           colorSuccess: '#0F62FE',
           colorError: '#DA1E28',
-          colorText: '#10170B',
+          // colorText: '#10170B',
           colorTextSecondary: '#70746D',
           colorBgLayout: '#F6F6F6',
           colorSuccessText: '#0C9725',
@@ -40,10 +40,8 @@ export function AntProvider({ children }: { children: ReactNode }) {
           Button: {
             borderRadius: 12,
             colorBorderDisabled: 'transparent',
-            primaryColor: '#000000',
             paddingInline: 24,
             fontSize: 16,
-            // primary btn
             colorPrimary: 'var(--color-primary)',
             colorPrimaryHover: 'var(--color-primary)',
           },
