@@ -1,6 +1,6 @@
-import { Button, Card, Flex, Typography } from "antd";
-import { StarOutlined } from "@ant-design/icons";
-import type { Product } from "./model/types";
+import { Button, Card, Flex, Typography } from 'antd';
+import { StarOutlined } from '@ant-design/icons';
+import type { Product } from './model/types';
 
 interface Props {
   product: Product;
@@ -19,8 +19,7 @@ export const ProductCard = ({ product, onShopClick }: Props) => {
     <Card
       hoverable
       className="w-full h-[395px]! rounded-2xl! relative"
-      cover={<img src={image} alt={title} className="w-full! h-48! object-contain!" />}
-    >
+      cover={<img src={image} alt={title} className="w-full! h-48! object-contain!" />}>
       <Flex vertical gap={30}>
         <Flex align="start" justify="space-between" className="-mt-2!">
           <Flex vertical>
@@ -46,9 +45,7 @@ export const ProductCard = ({ product, onShopClick }: Props) => {
               </Text>
             )}
 
-            <Text className="text-xl!">
-              ${showDiscount ? discountPrice : originalPrice}
-            </Text>
+            <Text className="text-xl!">${showDiscount ? discountPrice : originalPrice}</Text>
           </Flex>
 
           <Button
@@ -58,8 +55,7 @@ export const ProductCard = ({ product, onShopClick }: Props) => {
               e.preventDefault();
               e.stopPropagation();
               onShopClick(product);
-            }}
-          >
+            }}>
             Shop Now
           </Button>
         </Flex>
